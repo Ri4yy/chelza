@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Новости</title>
+    <style type="text/tailwindcss">
+        .container {
+		    @apply max-[1920px]:max-w-[1170px]
+		}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <p class="font-extrabold lg:text-[40px] md:text-3xl text-2xl md:text-start text-center">Новости</p>
+        <div class="flex flex-col mt-[30px]">
+            <div class="relative">
+                <div class="swiper swiperNews w-full">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/news/1.png" alt="" class="rounded-md object-cover w-full"></div>
+                        <div class="swiper-slide"><img src="assets/img/news/2.png" alt="" class="rounded-md object-cover w-full"></div>
+                        <div class="swiper-slide"><img src="assets/img/news/3.png" alt="" class="rounded-md object-cover w-full"></div>
+                        <div class="swiper-slide"><img src="assets/img/news/2.png" alt="" class="rounded-md object-cover w-full"></div>
+                        <div class="swiper-slide"><img src="assets/img/news/1.png" alt="" class="rounded-md object-cover w-full"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-prev-news absolute top-1/2 -translate-y-1/2 min-[1440px]:-left-[70px] lg:-left-5 -left-2 z-20 flex justify-center items-center w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.25259 1.00328L0.584574 7.84372C0.467461 7.96387 0.401917 8.12502 0.401917 8.29281C0.401917 8.46059 0.467461 8.62174 0.584574 8.74188L7.25259 15.5849C7.30714 15.6409 7.37237 15.6855 7.44442 15.7159C7.51646 15.7463 7.59387 15.7619 7.67207 15.7619C7.75028 15.7619 7.82769 15.7463 7.89973 15.7159C7.97178 15.6855 8.03701 15.6409 8.09156 15.5849C8.20379 15.47 8.26663 15.3157 8.26663 15.1551C8.26663 14.9945 8.20379 14.8403 8.09156 14.7253L1.82116 8.29281L8.09156 1.86155C8.20341 1.74671 8.266 1.59273 8.266 1.43242C8.266 1.2721 8.20341 1.11813 8.09156 1.00328C8.03701 0.947249 7.97178 0.902715 7.89973 0.872307C7.82769 0.841899 7.75028 0.826233 7.67207 0.826233C7.59387 0.826233 7.51646 0.841899 7.44442 0.872307C7.37237 0.902715 7.30714 0.947249 7.25259 1.00328Z"/>
+                    </svg>
+                </div>
+                <div class="swiper-next-news absolute top-1/2 -translate-y-1/2 min-[1440px]:-right-[70px] lg:-right-5 -right-2 z-20 flex justify-center items-center w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.74741 1.00328L8.41543 7.84372C8.53254 7.96387 8.59808 8.12502 8.59808 8.29281C8.59808 8.46059 8.53254 8.62174 8.41543 8.74188L1.74741 15.5849C1.69286 15.6409 1.62763 15.6855 1.55558 15.7159C1.48354 15.7463 1.40613 15.7619 1.32793 15.7619C1.24972 15.7619 1.17231 15.7463 1.10027 15.7159C1.02822 15.6855 0.962994 15.6409 0.90844 15.5849C0.796206 15.47 0.733372 15.3157 0.733372 15.1551C0.733372 14.9945 0.796206 14.8403 0.90844 14.7253L7.17884 8.29281L0.90844 1.86155C0.79659 1.74671 0.734 1.59273 0.734 1.43242C0.734 1.2721 0.79659 1.11813 0.90844 1.00328C0.962994 0.947249 1.02822 0.902715 1.10027 0.872307C1.17231 0.841899 1.24972 0.826233 1.32793 0.826233C1.40613 0.826233 1.48354 0.841899 1.55558 0.872307C1.62763 0.902715 1.69286 0.947249 1.74741 1.00328Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col items-center lg:gap-[30px] gap-4 md:mt-[50px] mt-5">
+                <p class="font-semibold md:text-[30px] text-[22px] lg:hidden flex">Заголовок блока</p>
+                <img src="assets/img/news/newsMain.png" alt="" class="lg:w-1/2 md:max-h-[300px] lg:max-h-full w-full object-cover rounded-md">
+                <div class="flex flex-col lg:w-1/2">
+                    <p class="font-semibold md:text-[30px] text-[22px] hidden lg:flex">Заголовок блока</p>
+                    <p class="text-[#454545]">Рыбатекст используется дизайнерами, фронтендерами, когда нужно 
+                        быстро заполнить макеты или прототипы содержимым. Это тестовый 
+                        контент, который не должен нести никакого смысла, показать наличие 
+                        самого текста или продемонстрировать типографику в деле. Рыбатекст 
+                        используется дизайнерами, фронтендерами, когда нужно быстро 
+                        заполнить макеты или прототипы содержимым. Это тестовый контент, 
+                        который не должен нести никакого смысла, показать наличие самого 
+                        текста или продемонстрировать типографику в деле.
+                    </p>
+                    <button class="rounded-md font-semibold py-4 px-[55px] bg-[#E9C46A] md:w-fit mt-6">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="assets/libs/jquery.js"></script>
+<script src="assets/libs/swiper.js"></script>
+<script src="assets/libs/jquery-ui.min.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/tailwind.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

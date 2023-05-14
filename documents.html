@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Документация</title>
+    <style type="text/tailwindcss">
+        .container {
+		    @apply max-[1920px]:max-w-[1170px]
+		}
+    </style>
+</head>
+<body>
+<header>
+    <div class="bg-[#F9F9F9] py-3 hidden md:flex">
+        <div class="container flex justify-between items-center">
+            <div class="flex items-center gap-2 text-[#454545]">
+                <img src="assets/img/icon/email.png" alt="">
+                <a href="mailto:info@eltsys.com">info@eltsys.com</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="assets/img/icon/phone.png" alt="">
+                <div>
+                    <a href="tel:88007078597" class="font-bold text-black">8(800) 707-85-97</a>
+                    <span class="text-[#454545]">(Бесплатно по РФ)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container flex justify-between items-center md:gap-20 lg:gap-0 py-6 relative">
+        <a href="#">
+            <img src="assets/img/icon/logo.png" alt="" class="w-1/2 md:w-full">
+        </a>
+        <nav class="">
+            <ul class="hidden md:flex xl:gap-[54px] md:gap-6 uppercase font-medium text-sm">
+                <li class="cursor-pointer relative">
+                    <div class="flex items-center gap-2 navOpen">
+                        <span>Продукция</span>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.54995 1.43751L5.34995 5.65001C5.29995 5.70001 5.24578 5.73534 5.18745 5.75601C5.12912 5.77701 5.06662 5.78751 4.99995 5.78751C4.93328 5.78751 4.87078 5.77701 4.81245 5.75601C4.75412 5.73534 4.69995 5.70001 4.64995 5.65001L0.437451 1.43751C0.320784 1.32084 0.262451 1.17501 0.262451 1.00001C0.262451 0.825006 0.324951 0.675006 0.449951 0.550006C0.574951 0.425006 0.720785 0.362506 0.887451 0.362506C1.05412 0.362506 1.19995 0.425006 1.32495 0.550006L4.99995 4.22501L8.67495 0.550006C8.79162 0.43334 8.93528 0.375006 9.10595 0.375006C9.27695 0.375006 9.42495 0.437506 9.54995 0.562506C9.67495 0.687506 9.73745 0.83334 9.73745 1.00001C9.73745 1.16667 9.67495 1.31251 9.54995 1.43751Z" fill="#0C0C0C"/>
+                        </svg>
+                    </div>
+                    <div class="hidden flex flex-col gap-3 bg-white p-2 rounded-md absolute left-0 -bottom-[110px] transition-all duration-300 z-20 navDrop">
+                        <a href="#">Продукция</a>
+                        <a href="#">Продукция</a>
+                        <a href="#">Продукция</a>
+                    </div>
+                </li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="documents.html">Заказчикам</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <!-- Бургер меню -->
+            <div class="hidden flex-col items-center bg-white rounded-md px-8 pt-[26px] pb-9 md:hidden absolute top-[95px] z-50 w-[95%] -translate-x-1/2 left-1/2" id="menu">
+                <ul class="flex flex-col items-center gap-7 uppercase font-medium text-sm">
+                    <li class="cursor-pointer relative">
+                        <div class="flex items-center gap-2 navOpen">
+                            <span>Продукция</span>
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.54995 1.43751L5.34995 5.65001C5.29995 5.70001 5.24578 5.73534 5.18745 5.75601C5.12912 5.77701 5.06662 5.78751 4.99995 5.78751C4.93328 5.78751 4.87078 5.77701 4.81245 5.75601C4.75412 5.73534 4.69995 5.70001 4.64995 5.65001L0.437451 1.43751C0.320784 1.32084 0.262451 1.17501 0.262451 1.00001C0.262451 0.825006 0.324951 0.675006 0.449951 0.550006C0.574951 0.425006 0.720785 0.362506 0.887451 0.362506C1.05412 0.362506 1.19995 0.425006 1.32495 0.550006L4.99995 4.22501L8.67495 0.550006C8.79162 0.43334 8.93528 0.375006 9.10595 0.375006C9.27695 0.375006 9.42495 0.437506 9.54995 0.562506C9.67495 0.687506 9.73745 0.83334 9.73745 1.00001C9.73745 1.16667 9.67495 1.31251 9.54995 1.43751Z" fill="#0C0C0C"/>
+                            </svg>
+                        </div>
+                        <div class="hidden flex flex-col gap-3 bg-white p-2 rounded-md absolute left-0 -bottom-[110px] transition-all duration-300 z-20 navDrop">
+                            <a href="#">Продукция</a>
+                            <a href="#">Продукция</a>
+                            <a href="#">Продукция</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="documents.html">Заказчикам</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="flex flex-col items-center mt-5">
+                    <p class="font-bold text-lg">Номер телефона:</p>
+                    <a href="tel:88007078597" class="font-bold mt-1">8(800) 707-85-97</a>
+                    <span>(Бесплатно по РФ)</span>
+                </div>
+                <div class="flex flex-col items-center mt-5">
+                    <p class="font-bold text-lg">Адрес:</p>
+                    <span class="mt-1 text-center">Чувашская Республика, 
+                        г. Чебоксары,ул. Афанасьева, 
+                        д. 8. Индекс: 428018
+                    </span>
+                </div>
+                <div class="flex flex-col items-center mt-5">
+                    <p class="font-bold text-lg">E-mail:</p>
+                    <a href="mailto:info@eltsys.com" class="font-bold mt-1">info@eltsys.com</a>
+                </div>
+                <button class="font-medium text-sm rounded-md px-8 py-3 bg-lightTurq mt-6">Обратная связь</button>
+            </div>
+            <div class="w-[26px] h-6 md:hidden flex flex-col gap-3 cursor-pointer z-[60] relative" id="openMenu">
+                <div class="w-full border-black border-[1px] topLine transition-all duration-300"></div>
+                <div class="w-full border-black border-[1px] midLine transition-all duration-300"></div>
+                <div class="w-full border-black border-[1px] bottomLine transition-all duration-300"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="hidden h-screen w-full z-30 bg-[#272525]/80 absolute top-0 left-0" id="overlay"></div>
+</header>
+
+<main class="container md:mb-[84px] mb-8">
+    <ul class="flex gap-x-2 text-sm text-[#4D4D4D] mt-8">
+        <li><a href="index.html">Главная</a></li>
+        <li> / </li>
+        <li>Сертификаты</li>
+    </ul>
+
+    <section class="md:mt-[30px] mt-[10px]">
+        <p class="font-extrabold lg:text-[40px] md:text-3xl text-2xl">Информация для заказчика</p>
+        <p class="md:mt-[30px] mt-[10px] text-[#454545] md:text-base text-sm">ООО "ЭЛТЕХ" активно ведет свою деятельность с 2007 года. Компания имеет квалифицированный персонал, 
+            профессиональный инструмент и свыше 1000м² производственной площади. Оказываем полный спектр услуг на рынке производства 
+            электрощитового оборудования для крупного, среднего и малого бизнеса.Заключаем договора на индивидуальных условиях, 
+            как с конечными потребителями, так и с фирмами-посредниками.
+        </p>
+        <div class="flex md:flex-row flex-col md:gap-[30px] md:mt-[14px]">
+            <p class="text-[#454545] md:text-base text-sm md:w-1/2">Мы приглашаем Заказчиков и Партнёров к взаимовыгодному сотрудничеству и гарантируем выполнение самых 
+                сложных задач качественно и в срок.
+            </p>
+            <div class="flex flex-col text-[#454545] font-semibold md:w-1/2">
+                <span class="md:text-base text-sm">Телефон для связи: <a href="tel:88007078597">8(800) 707-85-97</a></span>
+                <span class="md:text-base text-sm">E-mail: <a href="mailto:info@eltsys.com">info@eltsys.com</a></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col gap-12">
+        <div id="accordion">
+            <h3 class="relative bg-turq rounded-md text-white uppercase md:text-base text-[11px] font-semibold md:py-[18px] py-3 px-6 cursor-pointer md:mt-12 mt-4">
+                ПОРЯДОК ЗАКЛЮЧЕНИЯ ДОГОВОРОВ
+                <svg width="23" height="12" class="absolute right-6 top-1/2 -translate-y-1/2 transition-all duration-300" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.23034 1.74145L10.8656 11.1338C11.0348 11.2988 11.2618 11.3911 11.4982 11.3911C11.7345 11.3911 11.9615 11.2988 12.1307 11.1338L21.7696 1.74145C21.8485 1.66461 21.9112 1.57273 21.9541 1.47125C21.9969 1.36977 22.019 1.26073 22.019 1.15058C22.019 1.04043 21.9969 0.931388 21.9541 0.829904C21.9112 0.728419 21.8485 0.636545 21.7696 0.559703C21.6077 0.401612 21.3905 0.313107 21.1642 0.313107C20.938 0.313107 20.7207 0.401612 20.5588 0.559703L11.4982 9.39201L2.43928 0.559703C2.27751 0.402154 2.06062 0.313992 1.83481 0.313992C1.609 0.313992 1.39211 0.402154 1.23034 0.559703C1.15142 0.636545 1.08869 0.728419 1.04586 0.829904C1.00302 0.931388 0.980957 1.04043 0.980957 1.15058C0.980957 1.26073 1.00302 1.36977 1.04586 1.47125C1.08869 1.57273 1.15142 1.66461 1.23034 1.74145Z" fill="white"/>
+                </svg>
+            </h3>
+            <div class="p-[20px_32px_56px_24px] bg-[#F8F8F8] rounded-b-md h-auto">
+                <ul class="list-decimal list-inside text-[#454545]">
+                    <li>Вы обращаетесь к нам, отправив письмо с Техническим Заданием на нашу почту E-mail: info@eltsys.com или позвонив по телефону: 8(800) 707-85-97.</li>
+                    <li>Мы с вами обсуждаем предмет изготовления, а также объемы, необходимые материалы и сроки выполнения работ.</li>
+                    <li>Подсчитываем окончательную стоимость изготовления и дальнейший порядок расчета.</li>
+                    <li>Удтверждаем порядок сдачи и приемки работ.</li>
+                    <li>Удтверждаем гарантию и качества работ.</li>
+                    <li>Ответственность сторон указывается в договоре.</li>
+                </ul>
+            </div>
+            <h3 class="relative bg-turq rounded-md text-white uppercase md:text-base text-[11px] font-semibold md:py-[18px] py-3 px-6 cursor-pointer md:mt-12 mt-4">
+                ПОРЯДОК ЗАКЛЮЧЕНИЯ ДОГОВОРОВ
+                <svg width="23" height="12" class="absolute right-6 top-1/2 -translate-y-1/2 transition-all duration-300" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.23034 1.74145L10.8656 11.1338C11.0348 11.2988 11.2618 11.3911 11.4982 11.3911C11.7345 11.3911 11.9615 11.2988 12.1307 11.1338L21.7696 1.74145C21.8485 1.66461 21.9112 1.57273 21.9541 1.47125C21.9969 1.36977 22.019 1.26073 22.019 1.15058C22.019 1.04043 21.9969 0.931388 21.9541 0.829904C21.9112 0.728419 21.8485 0.636545 21.7696 0.559703C21.6077 0.401612 21.3905 0.313107 21.1642 0.313107C20.938 0.313107 20.7207 0.401612 20.5588 0.559703L11.4982 9.39201L2.43928 0.559703C2.27751 0.402154 2.06062 0.313992 1.83481 0.313992C1.609 0.313992 1.39211 0.402154 1.23034 0.559703C1.15142 0.636545 1.08869 0.728419 1.04586 0.829904C1.00302 0.931388 0.980957 1.04043 0.980957 1.15058C0.980957 1.26073 1.00302 1.36977 1.04586 1.47125C1.08869 1.57273 1.15142 1.66461 1.23034 1.74145Z" fill="white"/>
+                </svg>
+            </h3>
+            <div class="p-[20px_32px_56px_24px] bg-[#F8F8F8] rounded-b-md h-auto">
+                <ul class="list-decimal list-inside text-[#454545]">
+                    <li>Вы обращаетесь к нам, отправив письмо с Техническим Заданием на нашу почту E-mail: info@eltsys.com или позвонив по телефону: 8(800) 707-85-97.</li>
+                    <li>Мы с вами обсуждаем предмет изготовления, а также объемы, необходимые материалы и сроки выполнения работ.</li>
+                    <li>Подсчитываем окончательную стоимость изготовления и дальнейший порядок расчета.</li>
+                    <li>Удтверждаем порядок сдачи и приемки работ.</li>
+                    <li>Удтверждаем гарантию и качества работ.</li>
+                    <li>Ответственность сторон указывается в договоре.</li>
+                </ul>
+            </div>
+          </div>
+    </section>
+    
+    <section class="md:mt-10 mt-5">
+        <p class="font-extrabold lg:text-[40px] md:text-3xl text-2xl md:text-start text-center">Сертификаты</p>
+        <p class="font-semibold md:text-xl text-lg md:mt-6 mt-2">Продукция изготавливается на базе качественных комплектующих от ведущих производителей:</p>
+        <ul class="flex flex-col gap-3 marker:text-turq list-disc list-inside md:mt-5 mt-2">
+            <li>Корпуса,комплектующие и оболочки шкафов: Rittal,DKC, ABB, Schneider Electric, Siemens,EKF,IEK.</li>
+            <li>Аппараты: ABB, Schneider-Electric, Siemens.</li>
+            <li>Электромонтажное оборудование: Phoenix Contact, Wago, Weidmuller.</li>
+        </ul>
+        <div class="mt-8 relative">
+            <div class="swiper swiperDoc w-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/doc/1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/doc/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/doc/3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/doc/4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/doc/5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/doc/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/doc/3.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="swiper-prev-cert absolute top-1/2 -translate-y-1/2 min-[1440px]:-left-[70px] lg:-left-5 -left-2 z-20 flex justify-center items-center w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.25259 1.00328L0.584574 7.84372C0.467461 7.96387 0.401917 8.12502 0.401917 8.29281C0.401917 8.46059 0.467461 8.62174 0.584574 8.74188L7.25259 15.5849C7.30714 15.6409 7.37237 15.6855 7.44442 15.7159C7.51646 15.7463 7.59387 15.7619 7.67207 15.7619C7.75028 15.7619 7.82769 15.7463 7.89973 15.7159C7.97178 15.6855 8.03701 15.6409 8.09156 15.5849C8.20379 15.47 8.26663 15.3157 8.26663 15.1551C8.26663 14.9945 8.20379 14.8403 8.09156 14.7253L1.82116 8.29281L8.09156 1.86155C8.20341 1.74671 8.266 1.59273 8.266 1.43242C8.266 1.2721 8.20341 1.11813 8.09156 1.00328C8.03701 0.947249 7.97178 0.902715 7.89973 0.872307C7.82769 0.841899 7.75028 0.826233 7.67207 0.826233C7.59387 0.826233 7.51646 0.841899 7.44442 0.872307C7.37237 0.902715 7.30714 0.947249 7.25259 1.00328Z"/>
+                </svg>
+            </div>
+            <div class="swiper-next-cert absolute top-1/2 -translate-y-1/2 min-[1440px]:-right-[70px] lg:-right-5 -right-2 z-20 flex justify-center items-center w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.74741 1.00328L8.41543 7.84372C8.53254 7.96387 8.59808 8.12502 8.59808 8.29281C8.59808 8.46059 8.53254 8.62174 8.41543 8.74188L1.74741 15.5849C1.69286 15.6409 1.62763 15.6855 1.55558 15.7159C1.48354 15.7463 1.40613 15.7619 1.32793 15.7619C1.24972 15.7619 1.17231 15.7463 1.10027 15.7159C1.02822 15.6855 0.962994 15.6409 0.90844 15.5849C0.796206 15.47 0.733372 15.3157 0.733372 15.1551C0.733372 14.9945 0.796206 14.8403 0.90844 14.7253L7.17884 8.29281L0.90844 1.86155C0.79659 1.74671 0.734 1.59273 0.734 1.43242C0.734 1.2721 0.79659 1.11813 0.90844 1.00328C0.962994 0.947249 1.02822 0.902715 1.10027 0.872307C1.17231 0.841899 1.24972 0.826233 1.32793 0.826233C1.40613 0.826233 1.48354 0.841899 1.55558 0.872307C1.62763 0.902715 1.69286 0.947249 1.74741 1.00328Z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div>
+    <div class="modal hidden flex-col items-center bg-white rounded-md px-8 pt-[26px] pb-9 fixed md:top-[20%] top-[10%] z-50 md:w-[70%] w-[95%] -translate-x-1/2 left-1/2">
+      <p class="font-semibold text-xl">Рыбный текст</p>
+      <p class="mt-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
+        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
+        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. 
+        Curabitur ullamcorper ultricies nisi. Nam eget dui. Etia
+      </p>
+    </div>
+    <img src="assets/img/icon/closeModal.png" alt="" class="closeModal hidden fixed right-5 top-5 cursor-pointer z-[60]">
+    <div class="overlay hidden h-screen w-full z-30 bg-[#272525]/80 fixed top-0 left-0"></div>
+</div>
+
+<footer class="flex flex-col">
+    <div class="bg-[#F8F8F8] py-[50px]">
+        <div class="container grid md:grid-cols-3 min-[425px]:grid-cols-2">
+            <div class="flex flex-col items-center md:items-start">
+                <p class="font-bold uppercase">Информация</p>
+                <ul class="flex flex-col items-center md:items-start mt-4 leading-[2.5] font-medium">
+                    <li><a href="documents.html">Заказчику</a></li>
+                    <li><a href="documents.html">Сертификаты</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start md:-ml-4 md:mt-0 min-[425px]:mt-0 mt-5">
+                <p class="font-bold uppercase">главная</p>
+                <ul class="flex flex-col items-center md:items-start mt-4 leading-[2.5] font-medium">
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="documents.html">Документация</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Производство</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start gap-4 md:-ml-6 md:mt-0 mt-5">
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">Адрес:</p>
+                    <p class="font-medium leading-[1.5] md:text-start text-center">Чувашская Республика, г. Чебоксары,ул. Афанасьева, 
+                        д. 8. Индекс: 428018</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">E-mail:</p>
+                    <a href="mailto:info@eltsys.com" class="font-medium leading-[1.5]">info@eltsys.com</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">Телефоны:</p>
+                    <div class="font-medium md:text-start text-center">
+                        <a href="tel:88007078597">8(800) 707-85-97</a>
+                        <span>(Бесплатно для звонков из России)</span>
+                    </div>
+                    <div class="font-medium md:text-start text-center">
+                        <a href="tel:78352224032">+7(8352) 22-40-32</a>
+                        <span>(Чебоксары)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container flex md:flex-row flex-col md:gap-y-0 gap-4 items-center py-8">
+        <a href="index.html" class="mr-[70px]"><img src="assets/img/icon/logo.png" alt=""></a>
+        <p class="text-sm order-3 md:order-2 text-center md:text-start">© 2023 Элтех | <span class="block md:inline-block">Производство электрощитового оборудования</span></p>
+        <button class="openModal font-medium text-sm rounded-md py-3 px-8 bg-turq whitespace-nowrap md:ml-auto order-2 md:order-3">Обратная связь</button>
+    </div>
+</footer>
+
+<script src="assets/libs/jquery.js"></script>
+<script src="assets/libs/swiper.js"></script>
+<script src="assets/libs/jquery-ui.min.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/tailwind.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

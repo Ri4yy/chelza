@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Элтех | Chelza</title>
+    <style type="text/tailwindcss">
+        .container {
+            @apply max-[1920px]:max-w-[1170px]
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="bg-[#F9F9F9] py-3 hidden md:flex">
+        <div class="container flex justify-between items-center">
+            <div class="flex items-center gap-2 text-[#454545]">
+                <img src="assets/img/icon/email.png" alt="">
+                <a href="mailto:info@eltsys.com" class="hover:text-turq transition-all duration-300">info@eltsys.com</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="assets/img/icon/phone.png" alt="">
+                <div>
+                    <a href="tel:88007078597" class="font-bold text-black hover:text-turq transition-all duration-300">8(800) 707-85-97</a>
+                    <span class="text-[#454545]">(Бесплатно по РФ)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container flex justify-between items-center md:gap-20 lg:gap-0 py-6 relative">
+        <a href="index.html">
+            <img src="assets/img/icon/logo.png" alt="" class="w-1/2 md:w-full">
+        </a>
+        <nav class="">
+            <ul class="hidden md:flex xl:gap-[54px] md:gap-6 uppercase font-medium text-sm">
+                <li class="cursor-pointer relative">
+                    <div class="flex items-center group gap-2 navOpen">
+                        <span class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Продукция</span>
+                        <svg width="10" height="6" class="group-hover:fill-turq fill-[#0C0C0C] transition-all duration-500" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.54995 1.43751L5.34995 5.65001C5.29995 5.70001 5.24578 5.73534 5.18745 5.75601C5.12912 5.77701 5.06662 5.78751 4.99995 5.78751C4.93328 5.78751 4.87078 5.77701 4.81245 5.75601C4.75412 5.73534 4.69995 5.70001 4.64995 5.65001L0.437451 1.43751C0.320784 1.32084 0.262451 1.17501 0.262451 1.00001C0.262451 0.825006 0.324951 0.675006 0.449951 0.550006C0.574951 0.425006 0.720785 0.362506 0.887451 0.362506C1.05412 0.362506 1.19995 0.425006 1.32495 0.550006L4.99995 4.22501L8.67495 0.550006C8.79162 0.43334 8.93528 0.375006 9.10595 0.375006C9.27695 0.375006 9.42495 0.437506 9.54995 0.562506C9.67495 0.687506 9.73745 0.83334 9.73745 1.00001C9.73745 1.16667 9.67495 1.31251 9.54995 1.43751Z"/>
+                        </svg>
+                    </div>
+                    <div class="hidden flex flex-col gap-3 bg-white p-2 rounded-md absolute left-0 -bottom-[110px] transition-all duration-300 z-20 navDrop">
+                        <a href="#">Продукция</a>
+                        <a href="#">Продукция</a>
+                        <a href="#">Продукция</a>
+                    </div>
+                </li>
+                <li><a href="services.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Услуги</a></li>
+                <li><a href="projects.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Проекты</a></li>
+                <li><a href="documents.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Заказчикам</a></li>
+                <li><a href="contacts.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Контакты</a></li>
+            </ul>
+            <!-- Бургер меню -->
+            <div class="hidden flex-col items-center bg-white rounded-md px-8 pt-[26px] pb-9 md:hidden absolute top-[95px] z-50 w-[95%] -translate-x-1/2 left-1/2" id="menu">
+                <ul class="flex flex-col items-center gap-7 uppercase font-medium text-sm">
+                    <li class="cursor-pointer relative">
+                        <div class="flex items-center gap-2 navOpen">
+                            <span>Продукция</span>
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.54995 1.43751L5.34995 5.65001C5.29995 5.70001 5.24578 5.73534 5.18745 5.75601C5.12912 5.77701 5.06662 5.78751 4.99995 5.78751C4.93328 5.78751 4.87078 5.77701 4.81245 5.75601C4.75412 5.73534 4.69995 5.70001 4.64995 5.65001L0.437451 1.43751C0.320784 1.32084 0.262451 1.17501 0.262451 1.00001C0.262451 0.825006 0.324951 0.675006 0.449951 0.550006C0.574951 0.425006 0.720785 0.362506 0.887451 0.362506C1.05412 0.362506 1.19995 0.425006 1.32495 0.550006L4.99995 4.22501L8.67495 0.550006C8.79162 0.43334 8.93528 0.375006 9.10595 0.375006C9.27695 0.375006 9.42495 0.437506 9.54995 0.562506C9.67495 0.687506 9.73745 0.83334 9.73745 1.00001C9.73745 1.16667 9.67495 1.31251 9.54995 1.43751Z" fill="#0C0C0C"/>
+                            </svg>
+                        </div>
+                        <div class="hidden flex flex-col gap-3 bg-white p-2 rounded-md absolute left-0 -bottom-[110px] transition-all duration-300 z-20 navDrop">
+                            <a href="#">Продукция</a>
+                            <a href="#">Продукция</a>
+                            <a href="#">Продукция</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="documents.html">Заказчикам</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="flex flex-col items-center mt-5">
+                    <p class="font-bold text-lg">Номер телефона:</p>
+                    <a href="tel:88007078597" class="font-bold mt-1">8(800) 707-85-97</a>
+                    <span>(Бесплатно по РФ)</span>
+                </div>
+                <div class="flex flex-col items-center mt-5">
+                    <p class="font-bold text-lg">Адрес:</p>
+                    <span class="mt-1 text-center">Чувашская Республика, 
+                        г. Чебоксары,ул. Афанасьева, 
+                        д. 8. Индекс: 428018
+                    </span>
+                </div>
+                <div class="flex flex-col items-center mt-5">
+                    <p class="font-bold text-lg">E-mail:</p>
+                    <a href="mailto:info@eltsys.com" class="font-bold mt-1">info@eltsys.com</a>
+                </div>
+                <button class="font-medium text-sm rounded-md px-8 py-3 bg-lightTurq mt-6">Обратная связь</button>
+            </div>
+            <div class="w-[26px] h-6 md:hidden flex flex-col gap-3 cursor-pointer z-[60] relative" id="openMenu">
+                <div class="w-full border-black border-[1px] topLine transition-all duration-300"></div>
+                <div class="w-full border-black border-[1px] midLine transition-all duration-300"></div>
+                <div class="w-full border-black border-[1px] bottomLine transition-all duration-300"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="hidden h-screen w-full z-30 bg-[#272525]/80 absolute top-0 left-0" id="overlay"></div>
+</header>
+
+
+<div class="swiper swiperHero">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="bg-[url('assets/img/bg/bgHeroSlider1.png')] bg-cover bg-center pt-[126px] pb-[130px]">
+                <div class="container flex flex-col md:items-start items-center">
+                    <span class="text-sm leading-[1.4] text-center md:text-start">Общество с ограниченной 
+                        <span class="block">ответственностью</span>
+                    </span>
+                    <p class="font-extrabold text-[55px] uppercase">Элтех</p>
+                    <p class="font-medium leading-[1.6] mt-2 text-center md:text-start">Производство и продажа электрощитового оборудования,
+                        <span class="block">автоматики, устройств распределения электроэнергии</span>
+                        <span class="block">и управления на токи до 6300А</span>
+                    </p>
+                    <div class="flex gap-[10px] mt-8">
+                        <button class="py-4 bg-lightTurq hover:bg-turq hover:text-white transition-all duration-300 rounded-md text-sm font-medium text-black md:w-[170px] w-[140px]">Продукция</button>
+                        <button class="py-4 bg-turq hover:bg-lightTurq hover:text-black transition-all duration-300 rounded-md text-sm font-medium text-white md:w-[170px] w-[140px]">Услуги</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="bg-[url('assets/img/bg/bgHeroSlider1.png')] bg-cover bg-center pt-[126px] pb-[130px]">
+                <div class="container flex flex-col md:items-start items-center">
+                    <span class="text-sm leading-[1.4] text-center md:text-start">Общество с ограниченной 
+                        <span class="block">ответственностью</span>
+                    </span>
+                    <p class="font-extrabold text-[55px] uppercase">Элтех</p>
+                    <p class="font-medium leading-[1.6] mt-2 text-center md:text-start">Производство и продажа электрощитового оборудования,
+                        <span class="block">автоматики, устройств распределения электроэнергии</span>
+                        <span class="block">и управления на токи до 6300А</span>
+                    </p>
+                    <div class="flex gap-[10px] mt-8">
+                        <button class="py-4 bg-lightTurq hover:bg-turq hover:text-white transition-all duration-300 rounded-md text-sm font-medium text-black md:w-[170px] w-[140px]">Продукция</button>
+                        <button class="py-4 bg-turq hover:bg-lightTurq hover:text-black transition-all duration-300 rounded-md text-sm font-medium text-white md:w-[170px] w-[140px]">Услуги</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="bg-[url('assets/img/bg/bgHeroSlider1.png')] bg-cover bg-center pt-[126px] pb-[130px]">
+                <div class="container flex flex-col md:items-start items-center">
+                    <span class="text-sm leading-[1.4] text-center md:text-start">Общество с ограниченной 
+                        <span class="block">ответственностью</span>
+                    </span>
+                    <p class="font-extrabold text-[55px] uppercase">Элтех</p>
+                    <p class="font-medium leading-[1.6] mt-2 text-center md:text-start">Производство и продажа электрощитового оборудования,
+                        <span class="block">автоматики, устройств распределения электроэнергии</span>
+                        <span class="block">и управления на токи до 6300А</span>
+                    </p>
+                    <div class="flex gap-[10px] mt-8">
+                        <button class="py-4 bg-lightTurq hover:bg-turq hover:text-white transition-all duration-300 rounded-md text-sm font-medium text-black md:w-[170px] w-[140px]">Продукция</button>
+                        <button class="py-4 bg-turq hover:bg-lightTurq hover:text-black transition-all duration-300 rounded-md text-sm font-medium text-white md:w-[170px] w-[140px]">Услуги</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="bg-[url('assets/img/bg/bgHeroSlider1.png')] bg-cover bg-center pt-[126px] pb-[130px]">
+                <div class="container flex flex-col md:items-start items-center">
+                    <span class="text-sm leading-[1.4] text-center md:text-start">Общество с ограниченной 
+                        <span class="block">ответственностью</span>
+                    </span>
+                    <p class="font-extrabold text-[55px] uppercase">Элтех</p>
+                    <p class="font-medium leading-[1.6] mt-2 text-center md:text-start">Производство и продажа электрощитового оборудования,
+                        <span class="block">автоматики, устройств распределения электроэнергии</span>
+                        <span class="block">и управления на токи до 6300А</span>
+                    </p>
+                    <div class="flex gap-[10px] mt-8">
+                        <button class="py-4 bg-lightTurq hover:bg-turq hover:text-white transition-all duration-300 rounded-md text-sm font-medium text-black md:w-[170px] w-[140px]">Продукция</button>
+                        <button class="py-4 bg-turq hover:bg-lightTurq hover:text-black transition-all duration-300 rounded-md text-sm font-medium text-white md:w-[170px] w-[140px]">Услуги</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination flex gap-7 justify-center mb-6"></div>
+</div>
+
+<main class="md:mb-[52px] mb-[30px]">
+    <section class="max-[3840px]:px-[calc((100%-1576px)/2)] max-[1920px]:px-[calc((100%-1210px)/2)] max-[1279px]:px-[calc(((100%-1200px)/2)+35px)] max-[1169px]:px-5 max-[767px]:px-0 flex flex-col md:mt-12 mt-[10px]">
+        <div class="md:px-5 px-3">
+            <p class="font-extrabold lg:text-[40px] md:text-3xl text-2xl md:text-start text-center">Наша продукция</p>
+            <p class="font-semibold lg:text-xl md:text-lg text-xs md:text-start text-center mt-2">Распределительное оборудование, шкафы</p>
+        </div>
+        <div class="swiper swiperProduct w-full md:px-5 px-4 md:mt-7">
+            <div class="swiper-wrapper py-5">
+                <div class="swiper-slide flex flex-col gap-x-5 min-[1170px]:flex-row bg-white shadow-[0px_4px_24px_rgba(0,0,0,0.12)] rounded-md overflow-hidden h-auto">
+                    <div class="min-[1170px]:max-w-[200px] min-[1170px]:min-w-[200px] min-[1170px]:min-h-[272px] min-[1170px]:max-h-[100%] min-[320px]:max-h-[210px]">
+                      <img src="assets/img/products/prod1.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col py-4 px-3">
+                        <p class="flex flex-col font-semibold text-[22px] leading-[1.2] after:mt-4 after:mb-3 after:bg-[#D4D4D4] after:w-full after:h-[1px]">
+                            Распределительное<br> оборудование
+                        </p>
+                        <ul class="flex flex-wrap flex-col max-h-[200px] gap-x-[26px] leading-[1.7] text-[#454545] text-[15px] w-full">
+                            <li >РУНН</li>
+                            <li >ВРУ</li>
+                            <li >ЩСН</li>
+                            <li >ШСР1, ШР11</li>
+                            <li >ПР11</li>
+                            <li >ШРУЭ</li>
+                            <li >ЩО70</li>
+                            <li >РТЗО-88М</li>
+                            <li >ШРЭ</li>
+                            <li >УЭР</li>
+                            <li >ОЩ, ОЩВ</li>
+                            <li >Ящики учета<br> и распределения</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide flex flex-col gap-x-5 min-[1170px]:flex-row bg-white shadow-[0px_4px_24px_rgba(0,0,0,0.12)] rounded-md overflow-hidden h-auto">
+                    <div class="min-[1170px]:max-w-[200px] min-[1170px]:min-w-[200px] min-[1170px]:min-h-[272px] min-[1170px]:max-h-[100%] min-[320px]:max-h-[210px]">
+                      <img src="assets/img/products/prod2.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col py-4 px-3">
+                        <p class="flex flex-col font-semibold text-[22px] leading-[1.2] after:mt-4 after:mb-3 after:bg-[#D4D4D4] after:w-full after:h-[1px]">
+                          Шкафы управления<br> и автоматизации
+                        </p>
+                        <ul class="flex flex-wrap flex-col max-h-[200px] gap-x-[26px] leading-[1.7] text-[#454545] text-[15px] w-full">
+                          <li>Щиты управления</li>
+                          <li>Щиты управления насосами (ЩУН)</li>
+                          <li>Щиты управления вентиляцией (ЩУВ)</li>
+                          <li>Ящики серии Я5000</li>
+                          <li>Устройства компенсации реактивной мощности (УКРМ)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide flex flex-col gap-x-5 min-[1170px]:flex-row bg-white shadow-[0px_4px_24px_rgba(0,0,0,0.12)] rounded-md overflow-hidden h-auto">
+                    <div class="min-[1170px]:max-w-[200px] min-[1170px]:min-w-[200px] min-[1170px]:min-h-[272px] min-[1170px]:max-h-[100%] min-[320px]:max-h-[210px]">
+                      <img src="assets/img/products/prod3.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col py-4 px-3">
+                        <p class="flex flex-col font-semibold text-[22px] leading-[1.2] after:mt-4 after:mb-3 after:bg-[#D4D4D4] after:w-full after:h-[1px]">
+                          Системы<br> оперативного тока
+                        </p>
+                        <ul class="flex flex-wrap flex-col max-h-[200px] gap-x-[26px] leading-[1.7] text-[#454545] text-[15px] w-full">
+                          <li>Шкафы ЗВУ</li>
+                          <li>Щиты постоянного тока (ЩПТ)</li>
+                          <li>Шкафы распределения оперативного 
+                            постоянного тока (ШРОТ)</li>
+                          <li>Шкафы оперативного постоянного тока 
+                            (ШОТ)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide flex flex-col gap-x-5 min-[1170px]:flex-row bg-white shadow-[0px_4px_24px_rgba(0,0,0,0.12)] rounded-md overflow-hidden h-auto">
+                    <div class="min-[1170px]:max-w-[200px] min-[1170px]:min-w-[200px] min-[1170px]:min-h-[272px] min-[1170px]:max-h-[100%] min-[320px]:max-h-[210px]">
+                      <img src="assets/img/products/prod4.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col py-4 px-3">
+                        <p class="flex flex-col font-semibold text-[22px] leading-[1.2] after:mt-4 after:mb-3 after:bg-[#D4D4D4] after:w-full after:h-[1px]">
+                          Шкафы вторичной<br> коммутации
+                        </p>
+                        <ul class="flex flex-wrap flex-col max-h-[200px] gap-x-[26px] leading-[1.7] text-[#454545] text-[15px] w-full">
+                          <li>Шкафы промежуточных зажимов (ШЗВ)</li>
+                          <li>Шкафы наружной установки (ШЗН)</li>
+                          <li>Шкафы обогрева выключателей (ШОВ)</li>
+                          <li>Шкафы управления разъединителями (ШУР)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="min-[1170px]:hidden flex justify-center gap-[10px]">
+            <div class="swiper-prev flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.25259 1.00328L0.584574 7.84372C0.467461 7.96387 0.401917 8.12502 0.401917 8.29281C0.401917 8.46059 0.467461 8.62174 0.584574 8.74188L7.25259 15.5849C7.30714 15.6409 7.37237 15.6855 7.44442 15.7159C7.51646 15.7463 7.59387 15.7619 7.67207 15.7619C7.75028 15.7619 7.82769 15.7463 7.89973 15.7159C7.97178 15.6855 8.03701 15.6409 8.09156 15.5849C8.20379 15.47 8.26663 15.3157 8.26663 15.1551C8.26663 14.9945 8.20379 14.8403 8.09156 14.7253L1.82116 8.29281L8.09156 1.86155C8.20341 1.74671 8.266 1.59273 8.266 1.43242C8.266 1.2721 8.20341 1.11813 8.09156 1.00328C8.03701 0.947249 7.97178 0.902715 7.89973 0.872307C7.82769 0.841899 7.75028 0.826233 7.67207 0.826233C7.59387 0.826233 7.51646 0.841899 7.44442 0.872307C7.37237 0.902715 7.30714 0.947249 7.25259 1.00328Z"/>
+                </svg>
+            </div>
+            <div class="swiper-next flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.74741 1.00328L8.41543 7.84372C8.53254 7.96387 8.59808 8.12502 8.59808 8.29281C8.59808 8.46059 8.53254 8.62174 8.41543 8.74188L1.74741 15.5849C1.69286 15.6409 1.62763 15.6855 1.55558 15.7159C1.48354 15.7463 1.40613 15.7619 1.32793 15.7619C1.24972 15.7619 1.17231 15.7463 1.10027 15.7159C1.02822 15.6855 0.962994 15.6409 0.90844 15.5849C0.796206 15.47 0.733372 15.3157 0.733372 15.1551C0.733372 14.9945 0.796206 14.8403 0.90844 14.7253L7.17884 8.29281L0.90844 1.86155C0.79659 1.74671 0.734 1.59273 0.734 1.43242C0.734 1.2721 0.79659 1.11813 0.90844 1.00328C0.962994 0.947249 1.02822 0.902715 1.10027 0.872307C1.17231 0.841899 1.24972 0.826233 1.32793 0.826233C1.40613 0.826233 1.48354 0.841899 1.55558 0.872307C1.62763 0.902715 1.69286 0.947249 1.74741 1.00328Z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="container flex flex-col md:mt-[36px] mt-[30px]">
+        <p class="font-extrabold lg:text-[40px] md:text-3xl text-2xl md:text-start text-center">Области применения нашего оборудования</p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center md:gap-[30px] gap-[10px] md:mt-10 mt-4">
+            <div class="flex items-center md:w-full w-[288px] gap-[30px] py-[28px] px-6 rounded-md overflow-hidden bg-[url('assets/img/bg/el.png')] bg-cover relative">
+                <img src="assets/img/icon/factory.png" alt="">
+                <p class="text-white font-bold leading-[1.6]">Генерация<br> электроэнергии</p>
+            </div>
+            <div class="flex items-center md:w-full w-[288px] gap-[30px] py-[28px] px-6 rounded-md overflow-hidden bg-[url('assets/img/bg/el.png')] bg-cover relative">
+                <img src="assets/img/icon/electric.png" alt="">
+                <p class="text-white font-bold leading-[1.6]">Распределение<br> электроэнергии</p>
+            </div>
+            <div class="flex items-center md:w-full w-[288px] gap-[30px] py-[28px] px-6 rounded-md overflow-hidden bg-[url('assets/img/bg/el.png')] bg-cover relative">
+                <img src="assets/img/icon/industry.png" alt="">
+                <p class="text-white font-bold leading-[1.6]">Нефтегазовая<br> промышленность</p>
+            </div>
+            <div class="flex items-center md:w-full w-[288px] gap-[30px] py-[28px] px-6 rounded-md overflow-hidden bg-[url('assets/img/bg/el.png')] bg-cover relative">
+                <img src="assets/img/icon/winch.png" alt="">
+                <p class="text-white font-bold leading-[1.6]">Гражданское<br> строительство</p>
+            </div>
+            <div class="flex items-center md:w-full w-[288px] gap-[30px] py-[28px] px-6 rounded-md overflow-hidden bg-[url('assets/img/bg/el.png')] bg-cover relative">
+                <img src="assets/img/icon/bus.png" alt="">
+                <p class="text-white font-bold leading-[1.6]">Транспортная<br> промышленность</p>
+            </div>
+            <div class="flex items-center md:w-full w-[288px] gap-[30px] py-[28px] px-6 rounded-md overflow-hidden bg-[url('assets/img/bg/el.png')] bg-cover relative">
+                <img src="assets/img/icon/utilities.png" alt="">
+                <p class="text-white font-bold leading-[1.6]">Коммунальные<br> хозяйства</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F8F8F8] md:pt-10 pt-5 md:pb-[72px] pb-[30px] md:mt-[70px] mt-5">
+        <div class="container">
+            <p class="font-extrabold lg:text-[40px] md:text-3xl text-2xl md:text-start text-center">Реализованные проекты</p>
+            <div class="tabs relative mt-5">
+                <div class="tabs-triggers flex items-center border-b-[1px] border-[#C9C9C9] h-[34px] w-full xl:gap-0 gap-16 overflow-x-scroll xl:overflow-x-visible justify-between text-sm uppercase">
+                    <a href="#tab-1" class="tabs-triggers__item whitespace-nowrap">Проектирование</a>
+                    <a href="#tab-2" class="tabs-triggers__item whitespace-nowrap">Сборка и монтаж</a>
+                    <a href="#tab-3" class="tabs-triggers__item whitespace-nowrap">Пусконаладочные рабты</a>
+                    <a href="#tab-4" class="tabs-triggers__item whitespace-nowrap">Монтажные работы</a>
+                    <a href="#tab-5" class="tabs-triggers__item whitespace-nowrap">Проведение испытаний</a>
+                    <a href="#tab-6" class="tabs-triggers__item whitespace-nowrap">Сервичное обслуживание</a>
+                </div>
+            
+                <div class="tabs-content md:mt-12 mt-4">
+                    <div id="tab-1" class="tabs-content__item flex gap-[30px]">
+                        <div class="lg:w-1/2 w-full">
+                        <p class="font-semibold lg:text-[30px] text-lg leading-[1.3]">Проектирование электрощитового оборудования</p>
+                        <p class="leading-[1.6] text-[#454545] mt-3">Одним из направлений деятельности нашей компании является 
+                            разработка комплексных проектных решений в области электрощитового 
+                            оборудования.
+                        </p>
+                        <img src="assets/img/photo/projects1.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        <p class="font-semibold mt-4">ООО «ЭЛТЕХ» выполняет следующие виды работ:</p>
+                        <ul class="mt-5">
+                            <li class="flex gap-2 before:mt-1 before:content-['1'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Предпроектные работы: обследование, сбор исходных данных 
+                                согласно ТЗ.</li>
+                            <li class="flex gap-2 before:mt-1 before:content-['2'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Разработка проектной и рабочей документации электрощитового
+                                оборудования напряжением до 1000 В.</li>
+                        </ul>
+                        <p class="font-semibold mt-5">Заказчиками на разработку конструкторской документации выступают 
+                            компании в сфере
+                        </p>
+                        <ul class="flex flex-col flex-wrap gap-3 xl:max-h-[140px] marker:text-turq list-disc list-inside mt-3">
+                            <li>Генерации электрической энергии</li>
+                            <li>Распределения электроэнергии</li>
+                            <li>Нефте-газовой промышленности</li>
+                            <li>Горнодобывающей промышленности</li>
+                            <li>Гражданского строительства</li>
+                            <li>Химической промышленности</li>
+                            <li>Сельского хозяйства</li>
+                            <li>Транспорта и ЖКХ</li>
+                        </ul>
+                        <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        </div>
+                        <div class="hidden lg:flex flex-col gap-5 w-1/2">
+                            <img src="assets/img/photo/projects1.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                            <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tabs-content__item flex gap-[30px]">
+                        <div class="lg:w-1/2 w-full">
+                        <p class="font-semibold lg:text-[30px] text-lg leading-[1.3]">Проектирование электрощитового оборудования2</p>
+                        <p class="leading-[1.6] text-[#454545] mt-3">Одним из направлений деятельности нашей компании является 
+                            разработка комплексных проектных решений в области электрощитового 
+                            оборудования.
+                        </p>
+                        <img src="assets/img/photo/projects1.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        <p class="font-semibold mt-4">ООО «ЭЛТЕХ» выполняет следующие виды работ:</p>
+                        <ul class="mt-5">
+                            <li class="flex gap-2 before:mt-1 before:content-['1'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Предпроектные работы: обследование, сбор исходных данных 
+                                согласно ТЗ.</li>
+                            <li class="flex gap-2 before:mt-1 before:content-['2'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Разработка проектной и рабочей документации электрощитового
+                                оборудования напряжением до 1000 В.</li>
+                        </ul>
+                        <p class="font-semibold mt-5">Заказчиками на разработку конструкторской документации выступают 
+                            компании в сфере
+                        </p>
+                        <ul class="flex flex-col flex-wrap gap-3 xl:max-h-[140px] marker:text-turq list-disc list-inside mt-3">
+                            <li>Генерации электрической энергии</li>
+                            <li>Распределения электроэнергии</li>
+                            <li>Нефте-газовой промышленности</li>
+                            <li>Горнодобывающей промышленности</li>
+                            <li>Гражданского строительства</li>
+                            <li>Химической промышленности</li>
+                            <li>Сельского хозяйства</li>
+                            <li>Транспорта и ЖКХ</li>
+                        </ul>
+                        <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        </div>
+                        <div class="hidden lg:flex flex-col gap-5 w-1/2">
+                            <img src="assets/img/photo/projects1.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                            <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                        </div>
+                    </div> 
+                    <div id="tab-3" class="tabs-content__item flex gap-[30px]">
+                        <div class="lg:w-1/2 w-full">
+                        <p class="font-semibold lg:text-[30px] text-lg leading-[1.3]">Проектирование электрощитового оборудования3</p>
+                        <p class="leading-[1.6] text-[#454545] mt-3">Одним из направлений деятельности нашей компании является 
+                            разработка комплексных проектных решений в области электрощитового 
+                            оборудования.
+                        </p>
+                        <img src="assets/img/photo/projects1.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        <p class="font-semibold mt-4">ООО «ЭЛТЕХ» выполняет следующие виды работ:</p>
+                        <ul class="mt-5">
+                            <li class="flex gap-2 before:mt-1 before:content-['1'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Предпроектные работы: обследование, сбор исходных данных 
+                                согласно ТЗ.</li>
+                            <li class="flex gap-2 before:mt-1 before:content-['2'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Разработка проектной и рабочей документации электрощитового
+                                оборудования напряжением до 1000 В.</li>
+                        </ul>
+                        <p class="font-semibold mt-5">Заказчиками на разработку конструкторской документации выступают 
+                            компании в сфере
+                        </p>
+                        <ul class="flex flex-col flex-wrap gap-3 xl:max-h-[140px] marker:text-turq list-disc list-inside mt-3">
+                            <li>Генерации электрической энергии</li>
+                            <li>Распределения электроэнергии</li>
+                            <li>Нефте-газовой промышленности</li>
+                            <li>Горнодобывающей промышленности</li>
+                            <li>Гражданского строительства</li>
+                            <li>Химической промышленности</li>
+                            <li>Сельского хозяйства</li>
+                            <li>Транспорта и ЖКХ</li>
+                        </ul>
+                        <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        </div>
+                        <div class="hidden lg:flex flex-col gap-5 w-1/2">
+                            <img src="assets/img/photo/projects1.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                            <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                        </div>
+                    </div> 
+                    <div id="tab-4" class="tabs-content__item flex gap-[30px]">
+                        <div class="lg:w-1/2 w-full">
+                        <p class="font-semibold lg:text-[30px] text-lg leading-[1.3]">Проектирование электрощитового оборудования4</p>
+                        <p class="leading-[1.6] text-[#454545] mt-3">Одним из направлений деятельности нашей компании является 
+                            разработка комплексных проектных решений в области электрощитового 
+                            оборудования.
+                        </p>
+                        <img src="assets/img/photo/projects1.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        <p class="font-semibold mt-4">ООО «ЭЛТЕХ» выполняет следующие виды работ:</p>
+                        <ul class="mt-5">
+                            <li class="flex gap-2 before:mt-1 before:content-['1'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Предпроектные работы: обследование, сбор исходных данных 
+                                согласно ТЗ.</li>
+                            <li class="flex gap-2 before:mt-1 before:content-['2'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Разработка проектной и рабочей документации электрощитового
+                                оборудования напряжением до 1000 В.</li>
+                        </ul>
+                        <p class="font-semibold mt-5">Заказчиками на разработку конструкторской документации выступают 
+                            компании в сфере
+                        </p>
+                        <ul class="flex flex-col flex-wrap gap-3 xl:max-h-[140px] marker:text-turq list-disc list-inside mt-3">
+                            <li>Генерации электрической энергии</li>
+                            <li>Распределения электроэнергии</li>
+                            <li>Нефте-газовой промышленности</li>
+                            <li>Горнодобывающей промышленности</li>
+                            <li>Гражданского строительства</li>
+                            <li>Химической промышленности</li>
+                            <li>Сельского хозяйства</li>
+                            <li>Транспорта и ЖКХ</li>
+                        </ul>
+                        <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        </div>
+                        <div class="hidden lg:flex flex-col gap-5 w-1/2">
+                            <img src="assets/img/photo/projects1.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                            <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                        </div>
+                    </div> 
+                    <div id="tab-5" class="tabs-content__item flex gap-[30px]">
+                        <div class="lg:w-1/2 w-full">
+                        <p class="font-semibold lg:text-[30px] text-lg leading-[1.3]">Проектирование электрощитового оборудования5</p>
+                        <p class="leading-[1.6] text-[#454545] mt-3">Одним из направлений деятельности нашей компании является 
+                            разработка комплексных проектных решений в области электрощитового 
+                            оборудования.
+                        </p>
+                        <img src="assets/img/photo/projects1.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        <p class="font-semibold mt-4">ООО «ЭЛТЕХ» выполняет следующие виды работ:</p>
+                        <ul class="mt-5">
+                            <li class="flex gap-2 before:mt-1 before:content-['1'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Предпроектные работы: обследование, сбор исходных данных 
+                                согласно ТЗ.</li>
+                            <li class="flex gap-2 before:mt-1 before:content-['2'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Разработка проектной и рабочей документации электрощитового
+                                оборудования напряжением до 1000 В.</li>
+                        </ul>
+                        <p class="font-semibold mt-5">Заказчиками на разработку конструкторской документации выступают 
+                            компании в сфере
+                        </p>
+                        <ul class="flex flex-col flex-wrap gap-3 xl:max-h-[140px] marker:text-turq list-disc list-inside mt-3">
+                            <li>Генерации электрической энергии</li>
+                            <li>Распределения электроэнергии</li>
+                            <li>Нефте-газовой промышленности</li>
+                            <li>Горнодобывающей промышленности</li>
+                            <li>Гражданского строительства</li>
+                            <li>Химической промышленности</li>
+                            <li>Сельского хозяйства</li>
+                            <li>Транспорта и ЖКХ</li>
+                        </ul>
+                        <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        </div>
+                        <div class="hidden lg:flex flex-col gap-5 w-1/2">
+                            <img src="assets/img/photo/projects1.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                            <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                        </div>
+                    </div> 
+                    <div id="tab-6" class="tabs-content__item flex gap-[30px]">
+                        <div class="lg:w-1/2 w-full">
+                        <p class="font-semibold lg:text-[30px] text-lg leading-[1.3]">Проектирование электрощитового оборудования6</p>
+                        <p class="leading-[1.6] text-[#454545] mt-3">Одним из направлений деятельности нашей компании является 
+                            разработка комплексных проектных решений в области электрощитового 
+                            оборудования.
+                        </p>
+                        <img src="assets/img/photo/projects1.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        <p class="font-semibold mt-4">ООО «ЭЛТЕХ» выполняет следующие виды работ:</p>
+                        <ul class="mt-5">
+                            <li class="flex gap-2 before:mt-1 before:content-['1'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Предпроектные работы: обследование, сбор исходных данных 
+                                согласно ТЗ.</li>
+                            <li class="flex gap-2 before:mt-1 before:content-['2'] before:text-sm before:font-medium before:flex before:justify-center before:items-center before:text-white before:w-5 before:h-5 before:shrink-0 before:rounded-full before:bg-turq">Разработка проектной и рабочей документации электрощитового
+                                оборудования напряжением до 1000 В.</li>
+                        </ul>
+                        <p class="font-semibold mt-5">Заказчиками на разработку конструкторской документации выступают 
+                            компании в сфере
+                        </p>
+                        <ul class="flex flex-col flex-wrap gap-3 xl:max-h-[140px] marker:text-turq list-disc list-inside mt-3">
+                            <li>Генерации электрической энергии</li>
+                            <li>Распределения электроэнергии</li>
+                            <li>Нефте-газовой промышленности</li>
+                            <li>Горнодобывающей промышленности</li>
+                            <li>Гражданского строительства</li>
+                            <li>Химической промышленности</li>
+                            <li>Сельского хозяйства</li>
+                            <li>Транспорта и ЖКХ</li>
+                        </ul>
+                        <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md lg:hidden flex w-full border-[1px] border-[#C8C8C8] mt-4">
+                        </div>
+                        <div class="hidden lg:flex flex-col gap-5 w-1/2">
+                            <img src="assets/img/photo/projects1.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                            <img src="assets/img/photo/projects1_2.png" alt="" class="rounded-md w-full border-[1px] border-[#C8C8C8]">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="tabs-buttons flex justify-center gap-[10px] mt-3">
+                    <button class="tabs-button__prev lg:absolute lg:top-1/2 lg:-translate-y-1/2 xl:-left-[70px] lg:-left-10 group flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]" type="button" name="button">
+                        <svg width="9" height="16" class="fill-[#D0D0D0] group-hover:fill-[#0BB6A6]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.25259 1.00328L0.584574 7.84372C0.467461 7.96387 0.401917 8.12502 0.401917 8.29281C0.401917 8.46059 0.467461 8.62174 0.584574 8.74188L7.25259 15.5849C7.30714 15.6409 7.37237 15.6855 7.44442 15.7159C7.51646 15.7463 7.59387 15.7619 7.67207 15.7619C7.75028 15.7619 7.82769 15.7463 7.89973 15.7159C7.97178 15.6855 8.03701 15.6409 8.09156 15.5849C8.20379 15.47 8.26663 15.3157 8.26663 15.1551C8.26663 14.9945 8.20379 14.8403 8.09156 14.7253L1.82116 8.29281L8.09156 1.86155C8.20341 1.74671 8.266 1.59273 8.266 1.43242C8.266 1.2721 8.20341 1.11813 8.09156 1.00328C8.03701 0.947249 7.97178 0.902715 7.89973 0.872307C7.82769 0.841899 7.75028 0.826233 7.67207 0.826233C7.59387 0.826233 7.51646 0.841899 7.44442 0.872307C7.37237 0.902715 7.30714 0.947249 7.25259 1.00328Z"/>
+                        </svg>
+                    </button>
+                    <button class="tabs-button__next lg:absolute lg:top-1/2 lg:-translate-y-1/2 xl:-right-[70px] lg:-right-10 group flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]" type="button" name="button">
+                        <svg width="9" height="16" class="fill-[#D0D0D0] group-hover:fill-[#0BB6A6]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.74741 1.00328L8.41543 7.84372C8.53254 7.96387 8.59808 8.12502 8.59808 8.29281C8.59808 8.46059 8.53254 8.62174 8.41543 8.74188L1.74741 15.5849C1.69286 15.6409 1.62763 15.6855 1.55558 15.7159C1.48354 15.7463 1.40613 15.7619 1.32793 15.7619C1.24972 15.7619 1.17231 15.7463 1.10027 15.7159C1.02822 15.6855 0.962994 15.6409 0.90844 15.5849C0.796206 15.47 0.733372 15.3157 0.733372 15.1551C0.733372 14.9945 0.796206 14.8403 0.90844 14.7253L7.17884 8.29281L0.90844 1.86155C0.79659 1.74671 0.734 1.59273 0.734 1.43242C0.734 1.2721 0.79659 1.11813 0.90844 1.00328C0.962994 0.947249 1.02822 0.902715 1.10027 0.872307C1.17231 0.841899 1.24972 0.826233 1.32793 0.826233C1.40613 0.826233 1.48354 0.841899 1.55558 0.872307C1.62763 0.902715 1.69286 0.947249 1.74741 1.00328Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[url('assets/img/bg/invite.png')] bg-cover md:pt-[60px] pt-4 md:pb-[70px] pb-8">
+        <div class="flex min-[910px]:flex-row flex-col items-center justify-between md:gap-20 gap-[30px] container">
+            <div class="flex min-[910px]:flex-row flex-col items-center min-[910px]:items-start gap-4">
+                <img src="assets/img/icon/hand.png" alt="" class="w-16 h-16">
+                <div class="flex flex-col items-center min-[910px]:items-start text-white">
+                    <p class="font-extrabold xl:text-[40px] text-2xl text-center">Приглашаем Заказчиков</p>
+                    <p class="xl:text-xl text-base mt-4 text-center min-[910px]:text-start">к взаимовыгодному сотрудничеству. Гарантируем выполнение самых 
+                        сложных задачкачественно и в установленные сроки</p>
+                </div>
+            </div>
+            <button class="md:text-xl font-semibold hover:bg-lightTurq hover:text-white transition-all duration-300 py-5 px-11 rounded-md bg-turq whitespace-nowrap h-fit">Условия сотрудничества</button>
+        </div>
+    </section>
+
+    <section class="md:pt-[52px] pt-6">
+        <div class="container">
+            <p class="font-extrabold xl:text-[40px] text-2xl md:text-start text-center">Наше произвоство</p>
+            <p class="mt-3">В 2018 году наше предприятие модернизировалось. Одним из направлений стало освоение и новой производственной площадки 
+                общей площадью более 1000 кв.м. Процесс изготовления стал в большинстве автоматизированным.</p>
+            <div id="tabsProduction" class="mt-[28px]">
+                <ul class="flex items-center border-b-[1px] border-[#C9C9C9] h-[33px] w-full xl:gap-0 gap-16 overflow-x-scroll xl:overflow-x-visible justify-between text-sm uppercase">
+                  <li><a href="#tabs-assemble" class="whitespace-nowrap">сборка и монтаж</a></li>
+                  <li><a href="#tabs-storage" class="whitespace-nowrap">складские помещения</a></li>
+                  <li><a href="#tabs-labs" class="whitespace-nowrap">испытательная лаборатория</a></li>
+                  <li><a href="#tabs-delivery" class="whitespace-nowrap">упаковка и доставка</a></li>
+                </ul>
+                <div class="mt-12">
+                    <div id="tabs-assemble" class="flex flex-col">
+                        <div class="swiper swiperProduction1 w-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod1.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod2.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod3.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod4.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod5.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod6.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex lg:hidden justify-center gap-[10px] mt-2">
+                            <div class="swiper-prev-production1 flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.25259 1.00328L0.584574 7.84372C0.467461 7.96387 0.401917 8.12502 0.401917 8.29281C0.401917 8.46059 0.467461 8.62174 0.584574 8.74188L7.25259 15.5849C7.30714 15.6409 7.37237 15.6855 7.44442 15.7159C7.51646 15.7463 7.59387 15.7619 7.67207 15.7619C7.75028 15.7619 7.82769 15.7463 7.89973 15.7159C7.97178 15.6855 8.03701 15.6409 8.09156 15.5849C8.20379 15.47 8.26663 15.3157 8.26663 15.1551C8.26663 14.9945 8.20379 14.8403 8.09156 14.7253L1.82116 8.29281L8.09156 1.86155C8.20341 1.74671 8.266 1.59273 8.266 1.43242C8.266 1.2721 8.20341 1.11813 8.09156 1.00328C8.03701 0.947249 7.97178 0.902715 7.89973 0.872307C7.82769 0.841899 7.75028 0.826233 7.67207 0.826233C7.59387 0.826233 7.51646 0.841899 7.44442 0.872307C7.37237 0.902715 7.30714 0.947249 7.25259 1.00328Z"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-next-production1 flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.74741 1.00328L8.41543 7.84372C8.53254 7.96387 8.59808 8.12502 8.59808 8.29281C8.59808 8.46059 8.53254 8.62174 8.41543 8.74188L1.74741 15.5849C1.69286 15.6409 1.62763 15.6855 1.55558 15.7159C1.48354 15.7463 1.40613 15.7619 1.32793 15.7619C1.24972 15.7619 1.17231 15.7463 1.10027 15.7159C1.02822 15.6855 0.962994 15.6409 0.90844 15.5849C0.796206 15.47 0.733372 15.3157 0.733372 15.1551C0.733372 14.9945 0.796206 14.8403 0.90844 14.7253L7.17884 8.29281L0.90844 1.86155C0.79659 1.74671 0.734 1.59273 0.734 1.43242C0.734 1.2721 0.79659 1.11813 0.90844 1.00328C0.962994 0.947249 1.02822 0.902715 1.10027 0.872307C1.17231 0.841899 1.24972 0.826233 1.32793 0.826233C1.40613 0.826233 1.48354 0.841899 1.55558 0.872307C1.62763 0.902715 1.69286 0.947249 1.74741 1.00328Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-storage" class="flex flex-col">
+                        <div class="swiper swiperProduction2 w-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod1.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod2.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod3.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod4.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod5.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod6.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex lg:hidden justify-center gap-[10px] mt-2">
+                            <div class="swiper-prev-production2 flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.25259 1.00328L0.584574 7.84372C0.467461 7.96387 0.401917 8.12502 0.401917 8.29281C0.401917 8.46059 0.467461 8.62174 0.584574 8.74188L7.25259 15.5849C7.30714 15.6409 7.37237 15.6855 7.44442 15.7159C7.51646 15.7463 7.59387 15.7619 7.67207 15.7619C7.75028 15.7619 7.82769 15.7463 7.89973 15.7159C7.97178 15.6855 8.03701 15.6409 8.09156 15.5849C8.20379 15.47 8.26663 15.3157 8.26663 15.1551C8.26663 14.9945 8.20379 14.8403 8.09156 14.7253L1.82116 8.29281L8.09156 1.86155C8.20341 1.74671 8.266 1.59273 8.266 1.43242C8.266 1.2721 8.20341 1.11813 8.09156 1.00328C8.03701 0.947249 7.97178 0.902715 7.89973 0.872307C7.82769 0.841899 7.75028 0.826233 7.67207 0.826233C7.59387 0.826233 7.51646 0.841899 7.44442 0.872307C7.37237 0.902715 7.30714 0.947249 7.25259 1.00328Z"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-next-production2 flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.74741 1.00328L8.41543 7.84372C8.53254 7.96387 8.59808 8.12502 8.59808 8.29281C8.59808 8.46059 8.53254 8.62174 8.41543 8.74188L1.74741 15.5849C1.69286 15.6409 1.62763 15.6855 1.55558 15.7159C1.48354 15.7463 1.40613 15.7619 1.32793 15.7619C1.24972 15.7619 1.17231 15.7463 1.10027 15.7159C1.02822 15.6855 0.962994 15.6409 0.90844 15.5849C0.796206 15.47 0.733372 15.3157 0.733372 15.1551C0.733372 14.9945 0.796206 14.8403 0.90844 14.7253L7.17884 8.29281L0.90844 1.86155C0.79659 1.74671 0.734 1.59273 0.734 1.43242C0.734 1.2721 0.79659 1.11813 0.90844 1.00328C0.962994 0.947249 1.02822 0.902715 1.10027 0.872307C1.17231 0.841899 1.24972 0.826233 1.32793 0.826233C1.40613 0.826233 1.48354 0.841899 1.55558 0.872307C1.62763 0.902715 1.69286 0.947249 1.74741 1.00328Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-labs" class="flex flex-col">
+                        <div class="swiper swiperProduction3 w-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod1.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod2.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod3.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod4.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod5.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod6.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex lg:hidden justify-center gap-[10px] mt-2">
+                            <div class="swiper-prev-production3 flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.25259 1.00328L0.584574 7.84372C0.467461 7.96387 0.401917 8.12502 0.401917 8.29281C0.401917 8.46059 0.467461 8.62174 0.584574 8.74188L7.25259 15.5849C7.30714 15.6409 7.37237 15.6855 7.44442 15.7159C7.51646 15.7463 7.59387 15.7619 7.67207 15.7619C7.75028 15.7619 7.82769 15.7463 7.89973 15.7159C7.97178 15.6855 8.03701 15.6409 8.09156 15.5849C8.20379 15.47 8.26663 15.3157 8.26663 15.1551C8.26663 14.9945 8.20379 14.8403 8.09156 14.7253L1.82116 8.29281L8.09156 1.86155C8.20341 1.74671 8.266 1.59273 8.266 1.43242C8.266 1.2721 8.20341 1.11813 8.09156 1.00328C8.03701 0.947249 7.97178 0.902715 7.89973 0.872307C7.82769 0.841899 7.75028 0.826233 7.67207 0.826233C7.59387 0.826233 7.51646 0.841899 7.44442 0.872307C7.37237 0.902715 7.30714 0.947249 7.25259 1.00328Z"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-next-production3 flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.74741 1.00328L8.41543 7.84372C8.53254 7.96387 8.59808 8.12502 8.59808 8.29281C8.59808 8.46059 8.53254 8.62174 8.41543 8.74188L1.74741 15.5849C1.69286 15.6409 1.62763 15.6855 1.55558 15.7159C1.48354 15.7463 1.40613 15.7619 1.32793 15.7619C1.24972 15.7619 1.17231 15.7463 1.10027 15.7159C1.02822 15.6855 0.962994 15.6409 0.90844 15.5849C0.796206 15.47 0.733372 15.3157 0.733372 15.1551C0.733372 14.9945 0.796206 14.8403 0.90844 14.7253L7.17884 8.29281L0.90844 1.86155C0.79659 1.74671 0.734 1.59273 0.734 1.43242C0.734 1.2721 0.79659 1.11813 0.90844 1.00328C0.962994 0.947249 1.02822 0.902715 1.10027 0.872307C1.17231 0.841899 1.24972 0.826233 1.32793 0.826233C1.40613 0.826233 1.48354 0.841899 1.55558 0.872307C1.62763 0.902715 1.69286 0.947249 1.74741 1.00328Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-delivery" class="flex flex-col">
+                        <div class="swiper swiperProduction3 w-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod1.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod2.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod3.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod4.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod5.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide w-full">
+                                    <div class="flex flex-col">
+                                        <img src="assets/img/photo/prod6.png" alt="" class="rounded-md w-full object-cover">
+                                        <p class="font-semibold mt-4">Подпись к фото короткий текст пример</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex lg:hidden justify-center gap-[10px] mt-2">
+                            <div class="swiper-prev-production4 flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.25259 1.00328L0.584574 7.84372C0.467461 7.96387 0.401917 8.12502 0.401917 8.29281C0.401917 8.46059 0.467461 8.62174 0.584574 8.74188L7.25259 15.5849C7.30714 15.6409 7.37237 15.6855 7.44442 15.7159C7.51646 15.7463 7.59387 15.7619 7.67207 15.7619C7.75028 15.7619 7.82769 15.7463 7.89973 15.7159C7.97178 15.6855 8.03701 15.6409 8.09156 15.5849C8.20379 15.47 8.26663 15.3157 8.26663 15.1551C8.26663 14.9945 8.20379 14.8403 8.09156 14.7253L1.82116 8.29281L8.09156 1.86155C8.20341 1.74671 8.266 1.59273 8.266 1.43242C8.266 1.2721 8.20341 1.11813 8.09156 1.00328C8.03701 0.947249 7.97178 0.902715 7.89973 0.872307C7.82769 0.841899 7.75028 0.826233 7.67207 0.826233C7.59387 0.826233 7.51646 0.841899 7.44442 0.872307C7.37237 0.902715 7.30714 0.947249 7.25259 1.00328Z"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-next-production4 flex justify-center items-center relative w-10 h-10 rounded-full bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.14)]">
+                                <svg width="9" height="16"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.74741 1.00328L8.41543 7.84372C8.53254 7.96387 8.59808 8.12502 8.59808 8.29281C8.59808 8.46059 8.53254 8.62174 8.41543 8.74188L1.74741 15.5849C1.69286 15.6409 1.62763 15.6855 1.55558 15.7159C1.48354 15.7463 1.40613 15.7619 1.32793 15.7619C1.24972 15.7619 1.17231 15.7463 1.10027 15.7159C1.02822 15.6855 0.962994 15.6409 0.90844 15.5849C0.796206 15.47 0.733372 15.3157 0.733372 15.1551C0.733372 14.9945 0.796206 14.8403 0.90844 14.7253L7.17884 8.29281L0.90844 1.86155C0.79659 1.74671 0.734 1.59273 0.734 1.43242C0.734 1.2721 0.79659 1.11813 0.90844 1.00328C0.962994 0.947249 1.02822 0.902715 1.10027 0.872307C1.17231 0.841899 1.24972 0.826233 1.32793 0.826233C1.40613 0.826233 1.48354 0.841899 1.55558 0.872307C1.62763 0.902715 1.69286 0.947249 1.74741 1.00328Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+</main> 
+
+<div>
+    <div class="modal hidden flex-col items-center bg-white rounded-md px-8 pt-[26px] pb-9 fixed md:top-[20%] top-[10%] z-50 md:w-[70%] w-[95%] -translate-x-1/2 left-1/2">
+      <p class="font-semibold text-xl">Рыбный текст</p>
+      <p class="mt-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
+        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
+        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. 
+        Curabitur ullamcorper ultricies nisi. Nam eget dui. Etia
+      </p>
+    </div>
+    <img src="assets/img/icon/closeModal.png" alt="" class="closeModal hidden fixed right-5 top-5 cursor-pointer z-[60]">
+    <div class="overlay hidden h-screen w-full z-30 bg-[#272525]/80 fixed top-0 left-0"></div>
+</div>
+
+<footer class="flex flex-col">
+    <div class="bg-[#F8F8F8] py-[50px]">
+        <div class="container grid md:grid-cols-3 min-[425px]:grid-cols-2">
+            <div class="flex flex-col items-center md:items-start">
+                <p class="font-bold uppercase">Информация</p>
+                <ul class="flex flex-col items-center md:items-start mt-4 leading-[2.5] font-medium">
+                    <li><a href="documents.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Заказчику</a></li>
+                    <li><a href="documents.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Сертификаты</a></li>
+                    <li><a href="projects.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Проекты</a></li>
+                    <li><a href="#" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Вакансии</a></li>
+                    <li><a href="contacts.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start md:-ml-4 md:mt-0 min-[425px]:mt-0 mt-5">
+                <p class="font-bold uppercase">главная</p>
+                <ul class="flex flex-col items-center md:items-start mt-4 leading-[2.5] font-medium">
+                    <li><a href="#" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Продукция</a></li>
+                    <li><a href="services.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Услуги</a></li>
+                    <li><a href="documents.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Документация</a></li>
+                    <li><a href="#" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">О компании</a></li>
+                    <li><a href="#" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Производство</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start gap-4 md:-ml-6 md:mt-0 mt-5">
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">Адрес:</p>
+                    <p class="font-medium leading-[1.5] md:text-start text-center">Чувашская Республика, г. Чебоксары,ул. Афанасьева, 
+                        д. 8. Индекс: 428018</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">E-mail:</p>
+                    <a href="mailto:info@eltsys.com" class="font-medium leading-[1.5] hover:text-turq transition-all duration-300">info@eltsys.com</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">Телефоны:</p>
+                    <div class="font-medium md:text-start text-center">
+                        <a href="tel:88007078597" class="hover:text-turq transition-all duration-300">8(800) 707-85-97</a>
+                        <span>(Бесплатно для звонков из России)</span>
+                    </div>
+                    <div class="font-medium md:text-start text-center">
+                        <a href="tel:78352224032" class="hover:text-turq transition-all duration-300">+7(8352) 22-40-32</a>
+                        <span>(Чебоксары)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container flex md:flex-row flex-col md:gap-y-0 gap-4 items-center py-8">
+        <a href="index.html" class="mr-[70px]"><img src="assets/img/icon/logo.png" alt=""></a>
+        <p class="text-sm order-3 md:order-2 text-center md:text-start">© 2023 Элтех | <span class="block md:inline-block">Производство электрощитового оборудования</span></p>
+        <button class="openModal font-medium text-sm rounded-md py-3 px-8 bg-turq hover:bg-lightTurq hover:text-white transition-all duration-300 whitespace-nowrap md:ml-auto order-2 md:order-3">Обратная связь</button>
+    </div>
+</footer>
+
+<script src="assets/libs/jquery.js"></script>
+<script src="assets/libs/swiper.js"></script>
+<script src="assets/libs/jquery-ui.min.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/tailwind.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
