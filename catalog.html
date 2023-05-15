@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Каталог</title>
+    <style type="text/tailwindcss">
+        .container {
+		    @apply max-[1920px]:max-w-[1170px]
+		}
+    </style>
+</head>
+<body>
+<header>
+    <div class="bg-[#F9F9F9] py-3 hidden md:flex">
+        <div class="container flex justify-between items-center">
+            <div class="flex items-center gap-2 text-[#454545]">
+                <img src="assets/img/icon/email.png" alt="">
+                <a href="mailto:info@eltsys.com" class="hover:text-turq transition-all duration-300">info@eltsys.com</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="assets/img/icon/phone.png" alt="">
+                <div>
+                    <a href="tel:88007078597" class="font-bold text-black hover:text-turq transition-all duration-300">8(800) 707-85-97</a>
+                    <span class="text-[#454545]">(Бесплатно по РФ)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-b-[1px] border-[#BCBCBC]">
+        <div class="container flex justify-between items-center md:gap-20 lg:gap-0 py-6 relative">
+            <a href="index.html">
+                <img src="assets/img/icon/logo.png" alt="" class="w-1/2 md:w-full">
+            </a>
+            <nav>
+                <ul class="hidden md:flex xl:gap-[54px] md:gap-6 uppercase font-medium text-sm">
+                    <li class="cursor-pointer relative">
+                        <div class="flex items-center group gap-2 navOpen">
+                            <span class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Продукция</span>
+                            <svg width="10" height="6" class="group-hover:fill-turq fill-[#0C0C0C] transition-all duration-500" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.54995 1.43751L5.34995 5.65001C5.29995 5.70001 5.24578 5.73534 5.18745 5.75601C5.12912 5.77701 5.06662 5.78751 4.99995 5.78751C4.93328 5.78751 4.87078 5.77701 4.81245 5.75601C4.75412 5.73534 4.69995 5.70001 4.64995 5.65001L0.437451 1.43751C0.320784 1.32084 0.262451 1.17501 0.262451 1.00001C0.262451 0.825006 0.324951 0.675006 0.449951 0.550006C0.574951 0.425006 0.720785 0.362506 0.887451 0.362506C1.05412 0.362506 1.19995 0.425006 1.32495 0.550006L4.99995 4.22501L8.67495 0.550006C8.79162 0.43334 8.93528 0.375006 9.10595 0.375006C9.27695 0.375006 9.42495 0.437506 9.54995 0.562506C9.67495 0.687506 9.73745 0.83334 9.73745 1.00001C9.73745 1.16667 9.67495 1.31251 9.54995 1.43751Z"/>
+                            </svg>
+                        </div>
+                        <div class="hidden flex flex-col gap-3 bg-white p-2 rounded-md absolute left-0 -bottom-[110px] transition-all duration-300 z-20 navDrop">
+                            <a href="#">Продукция</a>
+                            <a href="#">Продукция</a>
+                            <a href="#">Продукция</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Услуги</a></li>
+                    <li><a href="projects.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Проекты</a></li>
+                    <li><a href="documents.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Заказчикам</a></li>
+                    <li><a href="contacts.html" class="relative transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-turq after:transition-all after:duration-300 hover:text-turq hover:after:w-full">Контакты</a></li>
+                </ul>
+                <!-- Бургер меню -->
+                <div class="hidden flex-col items-center bg-white rounded-md px-8 pt-[26px] pb-9 md:hidden absolute top-[72px] z-50 w-[95%] -translate-x-1/2 left-1/2" id="menu">
+                    <ul class="flex flex-col items-center gap-7 uppercase font-medium text-sm">
+                        <li class="cursor-pointer relative">
+                            <div class="flex items-center gap-2 navOpen">
+                                <span>Продукция</span>
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.54995 1.43751L5.34995 5.65001C5.29995 5.70001 5.24578 5.73534 5.18745 5.75601C5.12912 5.77701 5.06662 5.78751 4.99995 5.78751C4.93328 5.78751 4.87078 5.77701 4.81245 5.75601C4.75412 5.73534 4.69995 5.70001 4.64995 5.65001L0.437451 1.43751C0.320784 1.32084 0.262451 1.17501 0.262451 1.00001C0.262451 0.825006 0.324951 0.675006 0.449951 0.550006C0.574951 0.425006 0.720785 0.362506 0.887451 0.362506C1.05412 0.362506 1.19995 0.425006 1.32495 0.550006L4.99995 4.22501L8.67495 0.550006C8.79162 0.43334 8.93528 0.375006 9.10595 0.375006C9.27695 0.375006 9.42495 0.437506 9.54995 0.562506C9.67495 0.687506 9.73745 0.83334 9.73745 1.00001C9.73745 1.16667 9.67495 1.31251 9.54995 1.43751Z" fill="#0C0C0C"/>
+                                </svg>
+                            </div>
+                            <div class="hidden flex flex-col gap-3 bg-white p-2 rounded-md absolute left-0 -bottom-[110px] transition-all duration-300 z-20 navDrop">
+                                <a href="#">Продукция</a>
+                                <a href="#">Продукция</a>
+                                <a href="#">Продукция</a>
+                            </div>
+                        </li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="projects.html">Проекты</a></li>
+                        <li><a href="documents.html">Заказчикам</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <div class="flex flex-col items-center mt-5">
+                        <p class="font-bold text-lg">Номер телефона:</p>
+                        <a href="tel:88007078597" class="font-bold mt-1">8(800) 707-85-97</a>
+                        <span>(Бесплатно по РФ)</span>
+                    </div>
+                    <div class="flex flex-col items-center mt-5">
+                        <p class="font-bold text-lg">Адрес:</p>
+                        <span class="mt-1 text-center">Чувашская Республика, 
+                            г. Чебоксары,ул. Афанасьева, 
+                            д. 8. Индекс: 428018
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center mt-5">
+                        <p class="font-bold text-lg">E-mail:</p>
+                        <a href="mailto:info@eltsys.com" class="font-bold mt-1">info@eltsys.com</a>
+                    </div>
+                    <button class="font-medium text-sm rounded-md px-8 py-3 bg-lightTurq mt-6">Обратная связь</button>
+                </div>
+                <div class="w-[26px] h-6 md:hidden flex flex-col gap-3 cursor-pointer z-[60] relative" id="openMenu">
+                    <div class="w-full border-black border-[1px] topLine transition-all duration-300"></div>
+                    <div class="w-full border-black border-[1px] midLine transition-all duration-300"></div>
+                    <div class="w-full border-black border-[1px] bottomLine transition-all duration-300"></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="hidden h-screen w-full z-30 bg-[#272525]/80 absolute top-0 left-0" id="overlay"></div>
+</header>
+
+<main class="md:mb-[60px] mb-[30px]">
+    <ul class="container flex flex-wrap gap-x-2 text-sm text-[#4D4D4D] mt-8">
+        <li><a href="index.html">Главная</a></li>
+        <li> / </li>
+        <li>Продукция</li>
+        <li> / </li>
+        <li>Распределительные шкафы</li>
+        <li> / </li>
+        <li>Главные распределительные щиты (ГРЩ, РУНН)</li>
+    </ul>
+
+    <section class="container flex md:flex-row flex-col md:gap-[30px] gap-5 mt-[30px]">
+        <p class="font-extrabold md:hidden block xl:text-[40px] md:text-3xl text-2xl md:text-start text-center">
+            Главные распределительные щиты (ГРЩ, РУНН)
+        </p>
+        <div class="lg:w-[40%] md:w-1/2 h-fit flex justify-center items-center rounded-md border-[#D1D1D1] border-[1px] xl:px-20 xl:py-8 px-10 py-4">
+            <img src="assets/img/catalog/main.png" alt="" class="object-cover w-full">
+        </div>
+        <div class="flex flex-col justify-center lg:w-[60%] md:w-1/2">
+            <p class="font-extrabold md:block hidden xl:text-[40px] md:text-3xl text-2xl md:text-start text-center">
+                Главные распределительные щиты (ГРЩ, РУНН)
+            </p>
+            <p class="font-medium xl:text-xl md:text-lg text-base md:mt-6">
+                Главный распределительный щит ГРЩ является базовым элементом в системе 
+                энергоснабжения любого социального или производственного объекта.
+                ГРЩ располагается в помещении или огороженной части помещения, в котором 
+                расположено электрооборудование, доступное только для квалифицированного 
+                обслуживающего персонала.
+            </p>
+            <a href="#" class="bg-lightTurq hover:bg-turq transition-colors duration-300 group rounded-md py-3 md:px-7 px-2 w-fit md:mt-7 mt-3">
+                <div class="flex items-center gap-2">
+                    <svg width="22" height="22" class="fill-black group-hover:fill-white transition-colors duration-300" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.05825 1.84525C7.43254 0.660186 9.18534 0.00569046 11 0C14.6988 0 17.7691 2.75 18.1033 6.29612C20.2923 6.6055 22 8.43837 22 10.6879C22 13.1574 19.9403 15.125 17.4446 15.125H13.75C13.5677 15.125 13.3928 15.0526 13.2639 14.9236C13.1349 14.7947 13.0625 14.6198 13.0625 14.4375C13.0625 14.2552 13.1349 14.0803 13.2639 13.9514C13.3928 13.8224 13.5677 13.75 13.75 13.75H17.446C19.2211 13.75 20.625 12.3585 20.625 10.6879C20.625 9.01587 19.2225 7.62438 17.4446 7.62438H16.7571V6.93688C16.7585 3.88438 14.201 1.375 11 1.375C9.51483 1.38093 8.08066 1.91735 6.95613 2.8875C5.91525 3.784 5.37075 4.86475 5.37075 5.71313V6.32913L4.75887 6.3965C2.838 6.60687 1.375 8.184 1.375 10.0622C1.375 12.0794 3.06625 13.75 5.19887 13.75H8.25C8.43234 13.75 8.6072 13.8224 8.73614 13.9514C8.86507 14.0803 8.9375 14.2552 8.9375 14.4375C8.9375 14.6198 8.86507 14.7947 8.73614 14.9236C8.6072 15.0526 8.43234 15.125 8.25 15.125H5.19887C2.3485 15.125 0 12.8782 0 10.0622C0 7.63812 1.74075 5.63062 4.04525 5.12187C4.24187 3.93525 5.005 2.75275 6.05825 1.84525Z" />
+                        <path d="M10.5131 21.7993C10.577 21.8633 10.6529 21.9141 10.7364 21.9487C10.8199 21.9834 10.9095 22.0012 10.9999 22.0012C11.0903 22.0012 11.1799 21.9834 11.2634 21.9487C11.3469 21.9141 11.4228 21.8633 11.4866 21.7993L15.6116 17.6743C15.7407 17.5452 15.8133 17.3701 15.8133 17.1875C15.8133 17.0049 15.7407 16.8298 15.6116 16.7007C15.4825 16.5717 15.3075 16.4991 15.1249 16.4991C14.9423 16.4991 14.7672 16.5717 14.6381 16.7007L11.6874 19.6529V7.5625C11.6874 7.38016 11.615 7.2053 11.486 7.07636C11.3571 6.94743 11.1822 6.875 10.9999 6.875C10.8176 6.875 10.6427 6.94743 10.5138 7.07636C10.3848 7.2053 10.3124 7.38016 10.3124 7.5625V19.6529L7.36164 16.7007C7.23255 16.5717 7.05746 16.4991 6.87489 16.4991C6.69233 16.4991 6.51724 16.5717 6.38814 16.7007C6.25905 16.8298 6.18652 17.0049 6.18652 17.1875C6.18652 17.3701 6.25905 17.5452 6.38814 17.6743L10.5131 21.7993Z"/>
+                    </svg>
+                    <p class="text-sm font-medium group-hover:text-white transition-colors duration-300">Скачать полный каталог продукции</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="container md:mt-[52px] mt-[30px]">
+        <ul class="flex min-[510px]:flex-row flex-col flex-wrap md:gap-5 gap-[10px]">
+            <li class="grow "><a href="#appointment" class="scroll-to py-3 flex justify-center items-center rounded-md border-[1px] border-turq hover:bg-turq cursor-pointer text-turq text-sm uppercase hover:text-white transition-colors duration-300">Назначение</a></li>
+            <li class="grow "><a href="#technical" class="scroll-to py-3 flex justify-center items-center rounded-md border-[1px] border-turq hover:bg-turq cursor-pointer text-turq text-sm uppercase hover:text-white transition-colors duration-300">технические данные</a></li>
+            <li class="grow "><a href="#designation" class="scroll-to py-3 flex justify-center items-center rounded-md border-[1px] border-turq hover:bg-turq cursor-pointer text-turq text-sm uppercase hover:text-white transition-colors duration-300">структура условного обозначения</a></li>
+            <li class="grow "><a href="#supplies" class="scroll-to py-3 flex justify-center items-center rounded-md border-[1px] border-turq hover:bg-turq cursor-pointer text-turq text-sm uppercase hover:text-white transition-colors duration-300">объекты поставки</a></li>
+        </ul>
+    </section>
+
+    <section class="container flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 gap-2 md:mt-[58px] mt-5" id="appointment">
+        <div class="flex flex-col gap-3 lg:w-[60%] md:w-1/2">
+            <p class="font-semibold md:text-[30px] text-lg">Назначение:</p>
+            <ul class="flex flex-col md:gap-y-[10px] gap-y-1.5 text-[#454545]">
+                <li class="leading-[1.5]">
+                    Главный распределительный щит ГРЩ является базовым элементом в системе 
+                    энергоснабжения любого социального или производственного объекта.
+                </li>
+                <li class="leading-[1.5]">
+                    ГРЩ располагается в помещении или огороженной части помещения, в котором 
+                    расположено электрооборудование, доступное только для квалифицированного 
+                    обслуживающего персонала.
+                    <img src="assets/img/catalog/appoint1.png" alt="" class="w-full h-full mt-3.5 object-cover rounded-md md:hidden flex">
+                </li>
+                <li class="leading-[1.5]">
+                    ГРЩ, как правило, представляют собой сборную конструкцию, состоящую 
+                    из функциональных элементов (панелей), а именно:
+                    <ul class="flex flex-col gap-y-3 marker:text-turq list-disc list-inside mt-[10px]">
+                        <li>Вводная панель</li>
+                        <li>Секционная панель</li>
+                        <li>Распределительная панель</li>
+                    </ul>
+                </li>
+                <li class="leading-[1.5]">
+                    В качестве вводных и секционных аппаратов используются как выключатели-
+                    разъединители, так и автоматические выключатели.
+                </li>
+                <li class="leading-[1.5]">
+                    Главный распределительный щит предназначен для приёма и распределения 
+                    электроэнергии (возможен также учёт) в сетях переменного тока, защиты линий 
+                    при перегрузках, утечках и коротких замыканиях.
+                </li>
+                <li class="leading-[1.5]">
+                    Климатическое исполнение и категория размещения щитов УХЛ4 по ГОСТ 15150 
+                    и ГОСТ 15543.1.
+                </li>
+                <li class="leading-[1.5]">
+                    Щиты изготавливаются в соответствии с требованиями ТУ 3434-001-2435296-2018.
+                </li>
+            </ul>
+        </div>
+        <div class="hidden md:flex flex-col gap-5 lg:w-[40%] md:w-1/2">
+            <img src="assets/img/catalog/appoint1.png" alt="" class="w-full h-full object-cover rounded-md">
+            <img src="assets/img/catalog/appoint2.png" alt="" class="w-full h-full object-cover rounded-md">
+        </div>
+    </section>
+
+    <section class="container md:pt-[56px] pt-2" id="technical">
+        <p class="font-semibold md:text-[30px] text-lg">Технические данные:</p>
+        <div class="md:mt-5 mt-2">
+            <ul class="flex flex-col rounded-md overflow-hidden border-[1px] border-[#E6E6E6] relative md:after:absolute after:top-0 after:right-[40%] after:h-full after:w-[1px] after:bg-[#E6E6E6]">
+                <li class="py-5 bg-turq md:flex hidden">
+                    <div class="uppercase font-semibold px-6 text-white w-[60%]">наименование параметра</div>
+                    <div class="uppercase font-semibold px-6 text-white w-[40%]">Значение</div>
+                </li>
+                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                    <div class="px-6 text-[#454545] md:w-[60%]">Номинальное напряжение, В</div>
+                    <div class="font-semibold px-6 text-black md:w-[40%]">380</div>
+                </li>
+                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                    <div class="px-6 text-[#454545] md:w-[60%]">Род тока</div>
+                    <div class="font-semibold px-6 text-black md:w-[40%]">Переменный</div>
+                </li>
+                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                    <div class="px-6 text-[#454545] md:w-[60%]">Частота, Гц</div>
+                    <div class="font-semibold px-6 text-black md:w-[40%]">50</div>
+                </li>
+                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                    <div class="px-6 text-[#454545] md:w-[60%]">Количество фаз</div>
+                    <div class="font-semibold px-6 text-black md:w-[40%]">3</div>
+                </li>
+                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                    <div class="px-6 text-[#454545] md:w-[60%]">Номинальный ток вводного аппарата, А</div>
+                    <div class="font-semibold px-6 text-black md:w-[40%]">400, 630, 800, 1000, 1250, 1600, 2000, 2500, 3200</div>
+                </li>
+                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                    <div class="px-6 text-[#454545] md:w-[60%]">Число отходящих линий</div>
+                    <div class="font-semibold px-6 text-black md:w-[40%]">4-40</div>
+                </li>
+                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                    <div class="px-6 text-[#454545] md:w-[60%]">Номинальный ток отходящих линий, А</div>
+                    <div class="font-semibold px-6 text-black md:w-[40%]">63, 100, 160, 250, 400, 630</div>
+                </li>
+                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                    <div class="px-6 text-[#454545] md:w-[60%]">Габаритные размеры, мм, не более-высота-ширина-глубина</div>
+                    <div class="font-semibold px-6 text-black md:w-[40%]">2200800 - 6000600</div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="bg-[#F8F8F8] pt-10 pb-[52px] md:mt-[60px] mt-[30px]" id="designation">
+        <div class="container flex flex-col">
+            <p class="font-semibold md:text-[30px] text-lg text-center md:text-start">Структура условного обозначения</p>
+            <table class="w-fit md:mt-8 mt-5 mx-auto md:mx-0">
+                <thead class="font-semibold text-2xl">
+                    <tr>
+                        <td>ГРЩ</td>
+                        <td>-ХХXX</td>
+                        <td>-ХХXX</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><div class="flex justify-center items-center mx-auto mt-[14px] w-5 h-5 font-medium text-sm text-white bg-turq rounded-full">1</div></td>
+                        <td><div class="flex justify-center items-center mx-auto mt-[14px] w-5 h-5 font-medium text-sm text-white bg-turq rounded-full">2</div></td>
+                        <td><div class="flex justify-center items-center mx-auto mt-[14px] w-5 h-5 font-medium text-sm text-white bg-turq rounded-full">3</div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="w-full h-[1px] bg-[#E6E6E6] mb-5 mt-4"></div>
+            <ul class="flex flex-col gap-y-3">
+                <li class="flex gap-2 md:items-center items-start before:rounded-full before:bg-turq before:w-5 before:h-5 before:content-['1'] before:flex before:justify-center before:items-center before:text-white before:text-sm before:shrink-0"><div>Главный распределительный щит</div></li>
+                <li class="flex gap-2 md:items-center items-start before:rounded-full before:bg-turq before:w-5 before:h-5 before:content-['2'] before:flex before:justify-center before:items-center before:text-white before:text-sm before:shrink-0">Номинальный ток вводных аппаратов</li>
+                <li class="flex gap-2 md:items-center items-start before:rounded-full before:bg-turq before:w-5 before:h-5 before:content-['3'] before:flex before:justify-center before:items-center before:text-white before:text-sm before:shrink-0">Климатическое исполнение и категория размещения по ГОСТ 15150-69</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container md:pt-[42px] pt-4" id="supplies">
+        <p class="font-semibold md:text-[30px] text-lg">Объекты поставки</p>
+        <p class="font-semibold md:text-[20px] text-base md:mt-4 mt-[10px]">Шкафы НКУ данной серии поставлялись на объекты:</p>
+        <ul class="flex flex-col gap-y-3 text-[#454545] marker:text-turq list-disc list-outside md:mt-5 mt-3 ml-5">
+            <li>Административно-офисное здание по ул. К.Иванова, 50, г. Чебоксары, ГРЩ-630-УХЛ4 2018г.</li>
+            <li>Насосная станция, г.Чебоксары, Вурнарское шоссе, 13, ГРЩ-1000-УХЛ4, 2018г.</li>
+            <li>Складской комплекс г.Химки, ГРЩ-630-УХЛ4, 2019г.</li>
+            <li>КОГБУЗ "Инфекционная клиническая больница" г.Киров, ГРЩ-400-УХЛ4, 2020г.</li>
+            <li>ЯНАО, терминал СПГ и СГК «Утренний», административное здание, ГРЩ-400-УХЛ4, 2021г.</li>
+        </ul>
+    </section>
+</main>
+
+<div>
+    <div class="modal hidden flex-col items-center bg-white rounded-md px-8 pt-[26px] pb-9 fixed md:top-[20%] top-[10%] z-50 md:w-[70%] w-[95%] -translate-x-1/2 left-1/2">
+      <p class="font-semibold text-xl">Рыбный текст</p>
+      <p class="mt-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
+        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
+        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. 
+        Curabitur ullamcorper ultricies nisi. Nam eget dui. Etia
+      </p>
+    </div>
+    <img src="assets/img/icon/closeModal.png" alt="" class="closeModal hidden fixed right-5 top-5 cursor-pointer z-[60]">
+    <div class="overlay hidden h-screen w-full z-30 bg-[#272525]/80 fixed top-0 left-0"></div>
+</div>
+
+<footer class="flex flex-col">
+    <div class="bg-[#F8F8F8] py-[50px]">
+        <div class="container grid md:grid-cols-3 min-[425px]:grid-cols-2">
+            <div class="flex flex-col items-center md:items-start">
+                <p class="font-bold uppercase">Информация</p>
+                <ul class="flex flex-col items-center md:items-start mt-4 leading-[2.5] font-medium">
+                    <li><a href="documents.html">Заказчику</a></li>
+                    <li><a href="documents.html">Сертификаты</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start md:-ml-4 md:mt-0 min-[425px]:mt-0 mt-5">
+                <p class="font-bold uppercase">главная</p>
+                <ul class="flex flex-col items-center md:items-start mt-4 leading-[2.5] font-medium">
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="documents.html">Документация</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Производство</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start gap-4 md:-ml-6 md:mt-0 mt-5">
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">Адрес:</p>
+                    <p class="font-medium leading-[1.5] md:text-start text-center">Чувашская Республика, г. Чебоксары,ул. Афанасьева, 
+                        д. 8. Индекс: 428018</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">E-mail:</p>
+                    <a href="mailto:info@eltsys.com" class="font-medium leading-[1.5]">info@eltsys.com</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="font-bold text-lg">Телефоны:</p>
+                    <div class="font-medium md:text-start text-center">
+                        <a href="tel:88007078597">8(800) 707-85-97</a>
+                        <span>(Бесплатно для звонков из России)</span>
+                    </div>
+                    <div class="font-medium md:text-start text-center">
+                        <a href="tel:78352224032">+7(8352) 22-40-32</a>
+                        <span>(Чебоксары)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container flex md:flex-row flex-col md:gap-y-0 gap-4 items-center py-8">
+        <a href="index.html" class="mr-[70px]"><img src="assets/img/icon/logo.png" alt=""></a>
+        <p class="text-sm order-3 md:order-2 text-center md:text-start">© 2023 Элтех | <span class="block md:inline-block">Производство электрощитового оборудования</span></p>
+        <button class="openModal font-medium text-sm rounded-md py-3 px-8 bg-turq whitespace-nowrap md:ml-auto order-2 md:order-3">Обратная связь</button>
+    </div>
+</footer>
+
+<script src="assets/libs/jquery.js"></script>
+<script src="assets/libs/swiper.js"></script>
+<script src="assets/libs/jquery-ui.min.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/tailwind.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

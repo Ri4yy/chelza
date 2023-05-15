@@ -27,12 +27,14 @@ $('#openMenu, #overlay').click(() => {
     $('body').toggleClass('overflow-hidden');
 });
 
-// 
-// if($(window).width() < 1170) {
-//     $('.productPC').remove();
-// } else {
-//     $('.productMobile').remove();
-// }
+// Scroll
+$("a.scroll-to").on("click", function(e){
+  e.preventDefault();
+  var anchor = $(this).attr('href');
+  $('html, body').stop().animate({
+      scrollTop: $(anchor).offset().top - 60
+  }, 800);
+});
 
 // Modal
 $('.openModal').click(() => {
