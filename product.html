@@ -146,16 +146,158 @@
         </div>
     </section>
 
-    <section class="container md:mt-[52px] mt-[30px]">
+    <!-- <section class="container md:mt-[52px] mt-[30px]">
         <ul class="flex min-[510px]:flex-row flex-col flex-wrap md:gap-5 gap-[10px]">
             <li class="grow "><a href="#appointment" class="scroll-to py-3 flex justify-center items-center rounded-md border-[1px] border-turq hover:bg-turq cursor-pointer text-turq text-sm uppercase hover:text-white transition-colors duration-300">Назначение</a></li>
             <li class="grow "><a href="#technical" class="scroll-to py-3 flex justify-center items-center rounded-md border-[1px] border-turq hover:bg-turq cursor-pointer text-turq text-sm uppercase hover:text-white transition-colors duration-300">технические данные</a></li>
             <li class="grow "><a href="#designation" class="scroll-to py-3 flex justify-center items-center rounded-md border-[1px] border-turq hover:bg-turq cursor-pointer text-turq text-sm uppercase hover:text-white transition-colors duration-300">структура условного обозначения</a></li>
             <li class="grow "><a href="#supplies" class="scroll-to py-3 flex justify-center items-center rounded-md border-[1px] border-turq hover:bg-turq cursor-pointer text-turq text-sm uppercase hover:text-white transition-colors duration-300">объекты поставки</a></li>
         </ul>
-    </section>
+    </section> -->
 
-    <section class="container flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 gap-2 md:mt-[58px] mt-5" id="appointment">
+    <section class="md:pt-[52px] pt-6">
+        <div class="">
+            <div id="tabsCatalog" class="mt-[28px]">
+                <ul class="container flex items-center text-[#454545] border-b-[1px] border-[#C9C9C9] overflow-y-hidden h-[33px] w-full xl:gap-0 gap-16 overflow-x-scroll xl:overflow-x-visible justify-between text-sm uppercase">
+                  <li><a href="#tabs-appointment" class="whitespace-nowrap">назначение</a></li>
+                  <li><a href="#tabs-technical" class="whitespace-nowrap">Технические данные</a></li>
+                  <li><a href="#tabs-designation" class="whitespace-nowrap">Структура условного обозначения</a></li>
+                  <li><a href="#tabs-supplies" class="whitespace-nowrap">Объекты поставки</a></li>
+                </ul>
+                <div class="mt-12">
+                    <div id="tabs-appointment" class="container flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 gap-2">
+                        <div class="flex flex-col gap-3 lg:w-[60%] md:w-1/2">
+                            <p class="font-semibold md:text-[30px] text-lg">Назначение:</p>
+                            <ul class="flex flex-col md:gap-y-[10px] gap-y-1.5 text-[#454545]">
+                                <li class="leading-[1.5]">
+                                    Главный распределительный щит ГРЩ является базовым элементом в системе 
+                                    энергоснабжения любого социального или производственного объекта.
+                                </li>
+                                <li class="leading-[1.5]">
+                                    ГРЩ располагается в помещении или огороженной части помещения, в котором 
+                                    расположено электрооборудование, доступное только для квалифицированного 
+                                    обслуживающего персонала.
+                                    <img src="assets/img/catalog/appoint1.png" alt="" class="w-full h-full mt-3.5 object-cover rounded-md md:hidden flex">
+                                </li>
+                                <li class="leading-[1.5]">
+                                    ГРЩ, как правило, представляют собой сборную конструкцию, состоящую 
+                                    из функциональных элементов (панелей), а именно:
+                                    <ul class="flex flex-col gap-y-3 marker:text-turq list-disc list-inside mt-[10px]">
+                                        <li>Вводная панель</li>
+                                        <li>Секционная панель</li>
+                                        <li>Распределительная панель</li>
+                                    </ul>
+                                </li>
+                                <li class="leading-[1.5]">
+                                    В качестве вводных и секционных аппаратов используются как выключатели-
+                                    разъединители, так и автоматические выключатели.
+                                </li>
+                                <li class="leading-[1.5]">
+                                    Главный распределительный щит предназначен для приёма и распределения 
+                                    электроэнергии (возможен также учёт) в сетях переменного тока, защиты линий 
+                                    при перегрузках, утечках и коротких замыканиях.
+                                </li>
+                                <li class="leading-[1.5]">
+                                    Климатическое исполнение и категория размещения щитов УХЛ4 по ГОСТ 15150 
+                                    и ГОСТ 15543.1.
+                                </li>
+                                <li class="leading-[1.5]">
+                                    Щиты изготавливаются в соответствии с требованиями ТУ 3434-001-2435296-2018.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hidden md:flex flex-col gap-5 lg:w-[40%] md:w-1/2">
+                            <img src="assets/img/catalog/appoint1.png" alt="" class="w-full h-full object-cover rounded-md">
+                            <img src="assets/img/catalog/appoint2.png" alt="" class="w-full h-full object-cover rounded-md">
+                        </div>
+                    </div>
+                    <div id="tabs-technical" class="container flex flex-col">
+                        <p class="font-semibold md:text-[30px] text-lg">Технические данные:</p>
+                        <div class="md:mt-5 mt-2">
+                            <ul class="flex flex-col rounded-md overflow-hidden border-[1px] border-[#E6E6E6] relative md:after:absolute after:top-0 after:right-[40%] after:h-full after:w-[1px] after:bg-[#E6E6E6]">
+                                <li class="py-5 bg-turq md:flex hidden">
+                                    <div class="uppercase font-semibold px-6 text-white w-[60%]">наименование параметра</div>
+                                    <div class="uppercase font-semibold px-6 text-white w-[40%]">Значение</div>
+                                </li>
+                                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                                    <div class="px-6 text-[#454545] md:w-[60%]">Номинальное напряжение, В</div>
+                                    <div class="font-semibold px-6 text-black md:w-[40%]">380</div>
+                                </li>
+                                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                                    <div class="px-6 text-[#454545] md:w-[60%]">Род тока</div>
+                                    <div class="font-semibold px-6 text-black md:w-[40%]">Переменный</div>
+                                </li>
+                                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                                    <div class="px-6 text-[#454545] md:w-[60%]">Частота, Гц</div>
+                                    <div class="font-semibold px-6 text-black md:w-[40%]">50</div>
+                                </li>
+                                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                                    <div class="px-6 text-[#454545] md:w-[60%]">Количество фаз</div>
+                                    <div class="font-semibold px-6 text-black md:w-[40%]">3</div>
+                                </li>
+                                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                                    <div class="px-6 text-[#454545] md:w-[60%]">Номинальный ток вводного аппарата, А</div>
+                                    <div class="font-semibold px-6 text-black md:w-[40%]">400, 630, 800, 1000, 1250, 1600, 2000, 2500, 3200</div>
+                                </li>
+                                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                                    <div class="px-6 text-[#454545] md:w-[60%]">Число отходящих линий</div>
+                                    <div class="font-semibold px-6 text-black md:w-[40%]">4-40</div>
+                                </li>
+                                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                                    <div class="px-6 text-[#454545] md:w-[60%]">Номинальный ток отходящих линий, А</div>
+                                    <div class="font-semibold px-6 text-black md:w-[40%]">63, 100, 160, 250, 400, 630</div>
+                                </li>
+                                <li class="py-5 even:bg-[#F8F8F8] odd:bg-white flex md:flex-row flex-col">
+                                    <div class="px-6 text-[#454545] md:w-[60%]">Габаритные размеры, мм, не более-высота-ширина-глубина</div>
+                                    <div class="font-semibold px-6 text-black md:w-[40%]">2200800 - 6000600</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tabs-designation" class="flex flex-col bg-[#F8F8F8] pt-10 pb-[52px]">
+                        <div class="container flex flex-col">
+                            <p class="font-semibold md:text-[30px] text-lg text-center md:text-start">Структура условного обозначения</p>
+                            <table class="w-fit md:mt-8 mt-5 mx-auto md:mx-0">
+                                <thead class="font-semibold text-2xl">
+                                    <tr>
+                                        <td>ГРЩ</td>
+                                        <td>-ХХXX</td>
+                                        <td>-ХХXX</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="flex justify-center items-center mx-auto mt-[14px] w-5 h-5 font-medium text-sm text-white bg-turq rounded-full">1</div></td>
+                                        <td><div class="flex justify-center items-center mx-auto mt-[14px] w-5 h-5 font-medium text-sm text-white bg-turq rounded-full">2</div></td>
+                                        <td><div class="flex justify-center items-center mx-auto mt-[14px] w-5 h-5 font-medium text-sm text-white bg-turq rounded-full">3</div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="w-full h-[1px] bg-[#E6E6E6] mb-5 mt-4"></div>
+                            <ul class="flex flex-col gap-y-3">
+                                <li class="flex gap-2 md:items-center items-start before:rounded-full before:bg-turq before:w-5 before:h-5 before:content-['1'] before:flex before:justify-center before:items-center before:text-white before:text-sm before:shrink-0"><div>Главный распределительный щит</div></li>
+                                <li class="flex gap-2 md:items-center items-start before:rounded-full before:bg-turq before:w-5 before:h-5 before:content-['2'] before:flex before:justify-center before:items-center before:text-white before:text-sm before:shrink-0">Номинальный ток вводных аппаратов</li>
+                                <li class="flex gap-2 md:items-center items-start before:rounded-full before:bg-turq before:w-5 before:h-5 before:content-['3'] before:flex before:justify-center before:items-center before:text-white before:text-sm before:shrink-0">Климатическое исполнение и категория размещения по ГОСТ 15150-69</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tabs-supplies" class="container">
+                        <p class="font-semibold md:text-[30px] text-lg">Объекты поставки</p>
+                        <p class="font-semibold md:text-[20px] text-base md:mt-4 mt-[10px]">Шкафы НКУ данной серии поставлялись на объекты:</p>
+                        <ul class="flex flex-col gap-y-3 text-[#454545] marker:text-turq list-disc list-outside md:mt-5 mt-3 ml-5">
+                            <li>Административно-офисное здание по ул. К.Иванова, 50, г. Чебоксары, ГРЩ-630-УХЛ4 2018г.</li>
+                            <li>Насосная станция, г.Чебоксары, Вурнарское шоссе, 13, ГРЩ-1000-УХЛ4, 2018г.</li>
+                            <li>Складской комплекс г.Химки, ГРЩ-630-УХЛ4, 2019г.</li>
+                            <li>КОГБУЗ "Инфекционная клиническая больница" г.Киров, ГРЩ-400-УХЛ4, 2020г.</li>
+                            <li>ЯНАО, терминал СПГ и СГК «Утренний», административное здание, ГРЩ-400-УХЛ4, 2021г.</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+ 
+<!--<section class="container flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 gap-2 md:mt-[58px] mt-5" id="appointment">
         <div class="flex flex-col gap-3 lg:w-[60%] md:w-1/2">
             <p class="font-semibold md:text-[30px] text-lg">Назначение:</p>
             <ul class="flex flex-col md:gap-y-[10px] gap-y-1.5 text-[#454545]">
@@ -285,7 +427,7 @@
             <li>КОГБУЗ "Инфекционная клиническая больница" г.Киров, ГРЩ-400-УХЛ4, 2020г.</li>
             <li>ЯНАО, терминал СПГ и СГК «Утренний», административное здание, ГРЩ-400-УХЛ4, 2021г.</li>
         </ul>
-    </section>
+    </section> -->
 </main>
 
 <div>

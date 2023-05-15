@@ -10,6 +10,9 @@ $(function() {
     $("#tabsProduction").tabs();
 });
 $(function() {
+    $("#tabsCatalog").tabs();
+});
+$(function() {
     $("#accordion").accordion();
 });
 
