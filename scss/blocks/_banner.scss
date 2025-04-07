@@ -1,0 +1,12 @@
+.banner {
+    padding-top: 226px;
+    padding-bottom: 42px;
+
+    @media(max-width: $breakpoint768) {
+        padding-top: 175px;
+    }   
+    @media(max-width: $breakpoint480) {
+        padding-top: 120px;
+        padding-bottom: 18px;
+    }
+}

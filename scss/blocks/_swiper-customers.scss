@@ -1,0 +1,28 @@
+.swiper-customers {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    min-width: 0;
+
+    
+    &__slide {
+        
+        transition: all 1s;
+
+        border: 1px solid rgba(248, 248, 248, 0.52);
+        border-radius: 30px;
+        padding: 30px 36px;
+        backdrop-filter: blur(12px);
+        background: rgba(248, 248, 248, 0.47);
+        
+        @media(max-width: $breakpoint992) {
+            padding: 33px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 28px 20px;
+        }
+        @media(max-width: $breakpoint375) {
+            padding: 28px 10px;
+        }
+    }
+}

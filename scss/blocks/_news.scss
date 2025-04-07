@@ -1,0 +1,22 @@
+.news {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        row-gap: 34px;
+        column-gap: 16px;
+
+        @media(max-width: $breakpoint768) {
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 28px;
+            max-width: 628px;
+            margin: 0 auto;
+        }
+        @media(max-width: $breakpoint480) {
+            max-width: 300px;
+        }
+    }
+    &__bottom {
+        margin-top: 28px;
+    }
+}

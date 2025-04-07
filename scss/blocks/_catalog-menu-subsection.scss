@@ -1,0 +1,29 @@
+.catalog-menu-subsection {
+    // margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 10px;
+
+    // height: 148px;
+    // overflow-y: auto;
+
+    &__link {
+        display: block;
+        padding: 13px 16px;
+        border: 2px solid #b7b7b7;
+        border-radius: 15px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 75%;
+        color: $black;
+        transition: all .3s;
+
+        &:hover {
+            color: $main-color;
+            border-color: $main-color;
+        }
+    }
+} 

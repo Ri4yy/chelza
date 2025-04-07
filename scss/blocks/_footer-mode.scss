@@ -1,0 +1,17 @@
+.footer-mode {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        & p {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 130%;
+            color: $black;
+        }
+    }
+}

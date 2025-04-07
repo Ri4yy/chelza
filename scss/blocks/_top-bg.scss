@@ -1,0 +1,133 @@
+.top-bg {
+    position: absolute;
+    top: 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 5%;
+    background-image: url(/assets/img/bg/banner-bg.png);
+    pointer-events: none;
+
+    width: 100%;
+
+    &--catalog {
+        height: 420px;
+
+        @media(max-width: $breakpoint992) {
+            height: 386px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 286px;
+        }
+    }
+    &--news {
+        height: 450px;
+
+        @media(max-width: $breakpoint992) {
+            height: 386px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 286px;
+        }
+    }
+    &--contacts {
+        height: 620px;
+
+        @media(max-width: $breakpoint992) {
+            height: 564px;
+        }
+        @media(max-width: $breakpoint768) {
+            height: 680px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 590px;
+        }
+    }
+    &--services {
+        height: 450px;
+
+        @media(max-width: $breakpoint992) {
+            height: 564px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 590px;
+        }
+    }
+    &--projects {
+        height: 860px;
+
+        @media(max-width: $breakpoint992) {
+            height: 960px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 980px;
+        }
+    }
+    &--card {
+        height: 770px;
+
+        @media(max-width: $breakpoint992) {
+            height: 1280px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 1100px;
+        }
+    }
+    &--map {
+        height: 450px;
+
+        @media(max-width: $breakpoint992) {
+            height: 315px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 286px;
+        }
+    }
+    &--customers {
+        height: 896px;
+
+        @media(max-width: $breakpoint992) {
+            height: 1126px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 986px;
+        }
+    }
+    &--about {
+        height: 900px; 
+
+        @media(max-width: $breakpoint992) {
+            height: 1340px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 1100px;
+        }
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        pointer-events: none;
+        height: 300px;
+        width: 100%;
+    }
+    &::before {
+        width: 550px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, rgb(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 55%, rgba(255, 255, 255, 0) 100%);
+
+        @media(max-width: $container-width) {
+            background: linear-gradient(90deg, rgb(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        @media(max-width: $breakpoint768) {
+            width: 100%;
+        }
+    }
+    &::after {
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+    }
+}

@@ -1,0 +1,9 @@
+.product-similar {
+    @media(max-width: 900px) {
+        max-width: 576px;
+        margin: 0 auto;
+    }
+    @media(max-width: $breakpoint600) {
+        max-width: 275px;
+    }
+}

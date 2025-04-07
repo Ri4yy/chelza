@@ -1,0 +1,8 @@
+.swiper-gallery {
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 6px;
+    }
+}

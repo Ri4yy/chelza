@@ -1,0 +1,86 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 86px;
+
+    @media(max-width: $breakpoint768) {
+        gap: 82px;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 850px;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+        gap: 58px;
+
+        @media(max-width: $breakpoint992) {
+            gap: 25px;
+        }
+        @media(max-width: $breakpoint480) {
+            grid-template-columns: none;
+            gap: 18px;
+        }
+    }
+
+    &__item {
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        backdrop-filter: blur(24px);
+        background: rgba(255, 255, 255, 0.47);
+
+        padding: 20px 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media(max-width: $breakpoint992) {
+            padding: 20px 30px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 20px 12px;
+        }
+
+        &-icon {
+            max-height: 44px;
+
+            & svg {
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+        &-text {
+            margin-top: 22px;
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 130%;
+            text-align: center;
+
+            @media(max-width: $breakpoint480) {
+                margin-top: 14px;
+            }
+        }
+        &-link {
+            margin-top: 6px;
+
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            color: $black;
+            transition: color .3s;
+
+            @media(max-width: $breakpoint480) {
+                font-size: 20px;
+            }
+
+            &:hover {
+                color: #0a9e8f;
+            }
+        }
+    }
+}

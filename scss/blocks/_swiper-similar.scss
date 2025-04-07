@@ -1,0 +1,13 @@
+.swiper-similar {
+
+    &__slide {
+        height: auto;
+    }
+    &__btns {
+        margin-top: 28px;
+
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+    }
+}

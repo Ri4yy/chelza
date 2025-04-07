@@ -1,0 +1,25 @@
+.swiper-news-gallery {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    min-height: 0;
+    min-width: 0;
+
+    order: 2;
+
+    @media(max-width: $breakpoint480) {
+        order: 1;
+    }
+
+    &__slide {
+
+        &-link {
+            display: flex;
+        }
+        &-img {
+            border-radius: 15px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

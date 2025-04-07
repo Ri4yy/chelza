@@ -1,0 +1,28 @@
+.swiper-projects {
+
+    @media(max-width: $breakpoint992) {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100vh;
+        min-height: 0;
+        min-width: 0;
+
+        order: 2;
+    }
+    @media(max-width: $breakpoint600) {
+        order: 1;
+    }
+
+    &__img {
+        border-radius: 30px;
+        width: 100%;
+        object-fit: cover;
+
+        @media(max-width: $breakpoint992) {
+            max-height: 400px;
+        }
+        @media(max-width: $breakpoint480) {
+            border-radius: 21px;
+        }
+    }
+}

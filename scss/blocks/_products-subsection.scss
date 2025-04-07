@@ -1,0 +1,25 @@
+.products-subsection {
+    margin-top: 28px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &__link {
+        display: block;
+        padding: 11px 16px;
+        border: 2px solid #b7b7b7;
+        border-radius: 15px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: $black;
+        transition: all .3s;
+
+        &:hover {
+            border-color: $main-color;
+            color: $main-color;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.news-block {
+    position: relative;
+    z-index: 2;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__more {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: $main-color;
+        transition: color .3s;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+            gap: 12px;
+        }
+
+        & svg {
+            transition: all .3s;
+            fill: $main-color;
+        }
+
+        &:hover {
+            color: #0a9e8f;
+
+            & svg {
+                fill: #0a9e8f;
+                translate: 4px;
+            }
+        }
+    }
+
+    &__wrapper {
+        margin-top: 38px;
+    }
+}

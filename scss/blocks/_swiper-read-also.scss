@@ -1,0 +1,41 @@
+.swiper-read-also {
+
+    &__slide {
+        height: auto;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        &-date {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 300%;
+            color: $main-color;
+        }
+        &-name {
+            margin-bottom: 16px;
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 144%;
+            letter-spacing: -0.01em;
+            color: $black;
+        }
+        &-link {
+            margin-block-start: auto;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            font-weight: 600;
+            font-size: 16px;
+            color: $black;
+
+            & svg {
+                fill: $black;
+            }
+        }
+    }
+}

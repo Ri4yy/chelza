@@ -1,0 +1,52 @@
+.form-block-questions {
+    background-image: url(/assets/img/bg/form-q-bg.png);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border: 2px solid #d8d8d8;
+    border-radius: 30px;
+    padding: 35px 44px;
+
+    @media(max-width: $breakpoint768) {
+        padding: 44px 76px 186px;
+    }
+    @media(max-width: 700px) {
+        background-image: url(/assets/img/bg/form-q-bg-mobile.png);
+    }
+    @media(max-width: $breakpoint480) {
+        padding: 28px 20px 140px;
+    }
+
+    &__wrapper {
+        max-width: 570px;
+    }
+    &__title {
+        margin-bottom: 18px;
+
+        line-height: 1;
+        font-size: 48px;
+        color: $main-color;
+        text-transform: none;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 40px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 32px;
+        }
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 20px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
+    }
+}

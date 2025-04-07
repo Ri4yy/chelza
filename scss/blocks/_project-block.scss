@@ -1,0 +1,18 @@
+.project-block {
+    
+    &__wrapper {
+        margin-top: 38px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 28px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 18px;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

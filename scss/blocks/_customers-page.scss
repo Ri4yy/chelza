@@ -1,0 +1,42 @@
+.customers-page {
+
+    &__wrapper {
+        display: flex;
+        gap: 44px;
+
+        // height: 100dvh;
+
+        @media(max-width: $breakpoint992) {
+            flex-direction: column;
+        }
+        @media(max-width: $breakpoint480) {
+            gap: 20px;
+        }
+    }
+    &__side {
+        width: 236px;
+        flex-shrink: 0;
+
+        @media(max-width: $breakpoint992) {
+            width: max-content;
+        }
+        @media(max-width: $breakpoint375) {
+            width: 100%;
+        }
+    }
+
+    &__container {
+        width: 100%;
+    }
+    &__inner {
+        max-height: 410px;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 46px;    
+
+        @media(max-width: $breakpoint992) {
+            gap: 25px;
+        }
+    }
+}

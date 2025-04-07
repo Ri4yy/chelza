@@ -1,0 +1,34 @@
+.simplebar-scrollbar {
+    &::before {
+        background-color: $main-color;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &.simplebar-visible {
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+.simplebar-vertical.simplebar-track {
+
+    &__subsection {
+        right: 0;
+        width: 5px;
+        background: #DADADA;
+        border-radius: 5px;
+    }
+}
+
+.simplebar-horizontal.simplebar-track {
+    height: 5px;
+
+    &__tabs {
+        background: rgba(248, 248, 248, 0.75);
+        border-radius: 5px;
+    }
+}

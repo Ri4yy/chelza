@@ -1,0 +1,22 @@
+.swiper-product {
+    // width: 100%;
+    // max-width: 100%;
+    // max-height: 100vh;
+    // min-height: 0;
+    // min-width: 0;
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-link {
+            display: flex;
+        }
+        &-img {
+            object-fit: cover;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

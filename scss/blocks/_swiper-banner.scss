@@ -1,0 +1,65 @@
+.swiper-banner {
+    
+    &__slide {
+        height: auto;
+        display: flex;
+    }
+    &__btns {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 0;
+
+            position: absolute;
+            z-index: 2;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+        @media(max-width: $breakpoint480) {
+            bottom: 75x;
+        }
+
+        &-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid $main-color;
+            cursor: pointer;
+            transition: all .3s;
+
+            @media(max-width: $breakpoint480) {
+                width: 40px;
+                height: 40px;
+            }
+
+            & svg {
+                fill: $main-color;
+            }
+    
+            &.swiper-button-disabled {
+                border: 1px solid #9a9a98;
+    
+                & svg {
+                    fill: #9A9A98;
+                }
+            }
+    
+            &:not(.swiper-button-disabled) {
+                &:hover {
+                    background: rgba(12, 182, 166, 0.39);;
+                    & svg {
+                        fill: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

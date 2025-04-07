@@ -1,0 +1,38 @@
+.footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 10px;
+
+    @media(max-width: $breakpoint1024) {
+        column-gap: 24px;
+    }
+    @media(max-width: $breakpoint480) {
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        color: $black;
+    }
+    &__link {
+        display: block;
+        margin-top: 4px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        color: $main-color;
+        transition: color .3s;
+
+        &:hover {
+            color: #0a9e8f;
+        }
+    }
+}

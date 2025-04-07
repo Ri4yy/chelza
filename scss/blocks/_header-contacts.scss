@@ -1,0 +1,64 @@
+.header-contacts {
+    flex-shrink: 0;
+
+    @media(max-width: $breakpoint1024) {
+        display: none;
+    }
+
+    &__container {
+        display: flex;
+        gap: 28px;
+
+        @media(max-width: $container-width) {
+            gap: 14px;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #9a9a98;
+
+        @media(max-width: $container-width) {
+            font-size: 14px;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #323232;
+        transition: color .3s;
+
+        @media(max-width: $container-width) {
+            font-size: 14px;
+        }
+
+        &--phone {
+            &::before {
+                content: url(/assets/img/icons/i-phone.svg);
+                height: 18px;
+            }
+        }
+        &--mail {
+            &::before {
+                content: url(/assets/img/icons/i-mail.svg);
+                height: 15px;
+            }
+        }
+
+
+        &:hover {
+            color: #0a9e8f;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.geography-delivery {
+    margin: 30px auto 0;
+    max-width: 780px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 267%;
+        text-align: center;
+        color: $black;
+        
+        @media(max-width: $breakpoint1024) {
+            font-size: 20px;
+            line-height: 195%;
+        }
+    }
+    &__wrapper {
+        margin-top: 12px;
+
+        display: flex;
+        gap: 48px;
+        align-items: center;
+
+        @media(max-width: $breakpoint1024) {
+            gap: 40px;
+        }
+        @media(max-width: $breakpoint768) {
+            gap: 20px;
+        }
+        @media(max-width: $breakpoint600) {
+            flex-direction: column;
+            align-items: start;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    &__icon {
+        width: 70px;
+        flex-shrink: 0;
+
+        @media(max-width: $breakpoint768) {
+            width: 48px;
+        }
+
+        & img {
+            object-fit: contain;
+        }
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: $black;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+        }
+    }
+}

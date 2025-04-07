@@ -1,0 +1,57 @@
+.advantages {
+    position: relative;
+    z-index: 2;
+
+    &--banner {
+        margin-top: 38px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 25px;
+
+        @media(max-width: $container-width) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media(max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-grow: 1;
+        min-width: 0;
+
+        &-icon {
+            max-width: 60px;
+            flex-shrink: 0;
+
+            @media(max-width: $breakpoint480) {
+                max-width: 50px;
+            }
+
+            & img {
+                object-fit: contain;
+
+            }
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 20px;
+            color: $black;
+
+            @media(max-width: $breakpoint480) {
+                font-size: 16px;
+            }
+
+            & br {
+                @media(max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,179 @@
+.banner-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 426px;
+    width: 100%;
+
+    @media(max-width: $breakpoint768) {
+        flex-direction: column;
+        gap: 28px;
+    }   
+    @media(max-width: $breakpoint480) {
+        min-height: 380px;
+    }
+
+    &__left {
+        max-width: 682px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: $black;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 36px;
+        }   
+        @media(max-width: $breakpoint480) {
+            font-size: 28px;
+        }   
+        @media(max-width: $breakpoint375) {
+            font-size: 20px;
+        }
+    }
+    &__subtitle {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black;
+        text-wrap-style: balance;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 20px;
+        }   
+        @media(max-width: $breakpoint768) {
+            margin-top: 14px;
+        } 
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
+    &__btn {
+        margin-top: 42px;
+
+        border-radius: 30px;
+        padding: 15px 34px;
+
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+            padding: 13px 32px;
+        }
+
+        position: relative;
+        background: transparent;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            transition: opacity .35s ease-in-out;
+            top:0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; z-index:-1;
+            background: linear-gradient(90deg, #0cb6a6 4.34%, #0cb6a6 100%);
+        }
+
+        &::after {
+            content: ""; 
+            opacity: 0;
+            transition: opacity .35s ease-in-out;
+            position: absolute;
+            top:0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; 
+            z-index:-1;
+            background: linear-gradient(90deg, #055049 4.34%, #0cb6a6 100%);
+        }
+
+        &:hover {
+
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &--mobile {
+            display: none;
+
+            @media(max-width: $breakpoint768) {
+                display: flex;
+                margin-top: 106px;
+            } 
+            @media(max-width: $breakpoint480) {
+                margin-top: 96px;
+            }
+        }
+        &--desktop {
+            @media(max-width: $breakpoint768) {
+                display: none;
+            } 
+        }
+
+    }
+
+    &__img {
+        position: relative;
+        max-width: 454px;
+        width: 100%;
+        max-height: 370px;
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: $breakpoint480) {
+            max-width: 270px;
+        }
+
+        & img {
+            object-fit: contain;
+            position: relative;
+            z-index: 2;
+
+            @media(max-width: $breakpoint1024) {
+                max-height: 250px;
+            }   
+            @media(max-width: 900px) {
+                max-height: 220px;
+            }                           
+            @media(max-width: $breakpoint768) {
+                max-height: 100%;
+                max-height: 220px;
+            } 
+        }
+
+        &::after {
+            // content: url(/assets/img/banner/circle.svg);
+            // position: absolute;
+            // bottom: -30px;
+            // right: 0;
+
+            content: "";
+            background-image: url(/assets/img/banner/circle.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 100%;
+            aspect-ratio: 454 / 131;
+            bottom: -30px;
+            right: 0;
+        }
+    }
+}

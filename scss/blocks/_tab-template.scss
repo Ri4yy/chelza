@@ -1,0 +1,20 @@
+.tab-template {
+    position: relative;
+    z-index: 2;
+
+    &__title {
+
+    }
+    &__subtitle {
+        max-width: 1060px;
+
+        margin-top: 16px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        color: #454545;
+    }
+    &__body {
+        margin-top: 16px;
+    } 
+}

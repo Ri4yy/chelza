@@ -1,0 +1,76 @@
+.certificate {
+    position: relative;
+    z-index: 2;
+
+    &__wrapper {
+        margin-top: 26px;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 128%;
+        color: $black;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+    }
+    &__list {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        position: relative;
+        padding-left: 34px;
+
+        &::before {
+            content: '';
+            background: $main-color;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+
+            position: absolute;
+            left: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 135%;
+        color: $black;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
+    }
+
+    &__inner {
+        margin-top: 26px;
+
+        border: 1px solid rgba(248, 248, 248, 0.52);
+        border-radius: 30px;
+        backdrop-filter: blur(12px);
+        background: rgba(248, 248, 248, 0.47);
+        padding: 28px 30px;
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50px auto 50px;
+        gap: 30px;
+
+        @media(max-width: 600px) {
+            padding: 28px 16px;
+            gap: 24px;
+        }
+        @media(max-width: $breakpoint375) {
+            gap: 8px;
+        }
+    }
+}

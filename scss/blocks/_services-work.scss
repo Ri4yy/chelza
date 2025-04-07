@@ -1,0 +1,54 @@
+.services-work {
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+    }
+    &__list {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+
+        counter-reset: list;
+
+        @media(max-width: $breakpoint480) {
+            gap: 16px;
+        }
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        gap: 8px;
+        
+        &::before {
+            counter-increment: list;
+
+            content: counter(list);
+            margin-top: 2px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $main-color;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 143%;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+    }
+}

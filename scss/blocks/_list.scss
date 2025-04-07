@@ -1,0 +1,28 @@
+.list {
+
+    & li {
+        position: relative;
+        padding-left: 32px;
+
+        @media(max-width: $breakpoint600) {
+            padding-left: 24px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 13px;
+
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: $main-color;
+
+            @media(max-width: $breakpoint600) {
+                top: 7px;
+                left: 9px;
+            }
+        }
+    }
+}

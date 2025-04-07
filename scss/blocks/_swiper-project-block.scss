@@ -1,0 +1,28 @@
+.swiper-project-block {
+
+    &__btns {
+        margin-top: 28px;
+        
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+
+        &--desktop {
+            @media(max-width: $breakpoint992) {
+                display: none;
+            }
+        }
+        &--mobile {
+            display: none;
+
+            @media(max-width: $breakpoint992) {
+                margin-top: 0;
+                display: flex;
+            }
+        }
+    }
+
+    &__slide {
+        transition: all 1s;
+    }
+}

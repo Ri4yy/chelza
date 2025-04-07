@@ -1,0 +1,104 @@
+.form-block {
+    position: relative;
+    background-image: url(/assets/img/bg/form-m-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border: 2px solid #d8d8d8;
+    border-radius: 30px;
+    padding: 40px;
+
+    @media(max-width: $breakpoint768) {
+        padding: 40px 36px;
+    }
+    @media(max-width: $breakpoint480) {
+        padding: 22px 20px;
+    }
+
+    &--question {
+
+        & .form-block__img {
+            filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.36));
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+    &__left {
+        max-width: 600px;
+
+        @media(max-width: $breakpoint1024) {
+            max-width: 100%;
+        }
+    }
+    &__top {
+        width: 820px;
+
+        @media(max-width: $breakpoint1024) {
+            width: 100%;
+        }
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        width: 37%;
+
+        &--mobile {
+            display: none;
+            @media(max-width: $breakpoint1024) {
+                margin: 20px auto 0;
+                display: flex;
+
+                width: 100%;
+                max-width: 360px;
+            }
+            @media(max-width: 640px) {
+                max-width: 240px;
+            }
+            @media(max-width: $breakpoint375) {
+                max-width: 180px;
+            }
+        }
+        &--desktop {
+
+            @media(max-width: $breakpoint1024) {
+                display: none;
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 16px;
+
+        line-height: 1;
+        font-size: 48px;
+        color: $main-color;
+        text-transform: none;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 40px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 32px;
+        }
+        @media(max-width: 400px) {
+            font-size: 20px;
+        }
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 20px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
+    }
+}

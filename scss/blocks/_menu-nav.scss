@@ -1,11 +1,8 @@
 .menu-nav {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 32px;
 
-    @media(max-width: $breakpoint1280) {
-        gap: 16px;
-    }
     @media(max-width: $breakpoint1024) {
         gap: 6px;
     }
@@ -16,9 +13,15 @@
 
     &__link {
         display: block;
-        font-weight: 500;
-        font-size: 18px;
-        color: $main-text;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        color: $black;
+        transition: color .3s;
+
+        &:hover {
+            color: $main-color;
+        }
 
         @media(max-width: $breakpoint1024) {
             font-size: 16px;

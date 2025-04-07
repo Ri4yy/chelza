@@ -1,0 +1,17 @@
+.products {
+    
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+        gap: 28px;
+
+        @media(max-width: $breakpoint768) {
+            gap: 18px;
+            grid-template-columns: unset;
+        }
+    }
+
+    &__item {
+        container: card / inline-size;
+    }
+}

@@ -1,0 +1,98 @@
+.consult-form {
+    // margin-top: 24px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        @media(max-width: $breakpoint480) {
+            gap: 16px;
+        }
+    }
+    &__input {
+        border: 1px solid #9a9a98;
+        border-radius: 12px;
+        padding: 12px 18px;
+        background: #f8f8f8;
+        
+        font-weight: 500;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.5);
+
+        &::placeholder {
+            font-weight: 500;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__bottom {
+        margin-top: 38px;
+
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: $breakpoint480) {
+            margin-top: 26px;
+            gap: 20px;
+        }
+        @media(max-width: $breakpoint375) {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    &__btn {    
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+            & .consult-form__btn-icon {
+                background: transparent;
+                border: 1px solid $main-color;
+
+                & svg {
+                    fill: $main-color;
+                    transform: translate(3px, -3px);
+                }
+            }
+        }
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: $main-color; 
+    
+            transition: all .3s;
+    
+            & svg {
+                fill: #fff;
+    
+                transition: all .3s;
+            }
+        }
+        &-text {
+            font-weight: 800;
+            font-size: 16px;
+            color: $black;
+        }
+    }
+
+    &__confirm {
+        max-width: 220px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 130%;
+        color: #9a9a98;
+
+        @media(max-width: $breakpoint375) {
+            max-width: 100%;
+        }
+    }
+}
