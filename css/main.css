@@ -972,11 +972,11 @@ h3 {
   }
 }
 .header-contacts__link--phone::before {
-  content: url(../img/icons/i-phone.svg);
+  content: url(../assets/img/icons/i-phone.svg);
   height: 18px;
 }
 .header-contacts__link--mail::before {
-  content: url(../img/icons/i-mail.svg);
+  content: url(../assets/img/icons/i-mail.svg);
   height: 15px;
 }
 .header-contacts__link:hover {
