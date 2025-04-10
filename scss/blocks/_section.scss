@@ -31,7 +31,7 @@
     }
 
     &--banner {
-        background-image: url(/assets/img/bg/banner-bg.png);
+        background-image: url(../img/bg/banner-bg.png);
         background-position-x: 80%;
 
         &::before, &::after {
@@ -73,7 +73,7 @@
         }
     }
     &--about {
-        background-image: url(/assets/img/bg/about-bg.png);
+        background-image: url(../img/bg/about-bg.png);
 
         @media(max-width: $breakpoint992) {
             background-position-x: 60%;
@@ -96,7 +96,7 @@
     }
 
     &--news {
-        background-image: url(/assets/img/bg/news-bg.png);
+        background-image: url(../img/bg/news-bg.png);
     
         &::before {
             top: 0;
@@ -109,7 +109,7 @@
     }
 
     &--customers {
-        background-image: url(/assets/img/bg/customers-bg.png);
+        background-image: url(../img/bg/customers-bg.png);
 
         @media(max-width: $breakpoint480) {
             padding: 38px 0;
@@ -125,7 +125,7 @@
         }
     }
     &--service {
-        background-image: url(/assets/img/bg/service-bg.png);
+        background-image: url(../img/bg/service-bg.png);
 
         @media(max-width: $breakpoint480) {
             padding: 18px 0 100px;
@@ -157,7 +157,7 @@
     }
 
     &--certificate {
-        background-image: url(/assets/img/bg/certificate-bg.png);
+        background-image: url(../img/bg/certificate-bg.png);
 
         padding: 38px 0 76px;
     
@@ -172,7 +172,7 @@
     }
 
     &--contact-details {
-        background-image: url(/assets/img/bg/contact-details-bg.png);
+        background-image: url(../img/bg/contact-details-bg.png);
 
         padding: 38px 0 140px;
 
@@ -193,7 +193,7 @@
         }
     }
     &--gallery {
-        background-image: url(/assets/img/bg/gallery-bg.png);
+        background-image: url(../img/bg/gallery-bg.png);
     
         &::before {
             top: 0;
@@ -208,7 +208,7 @@
     }
 
     &--error {
-        background-image: url(/assets/img/bg/error-bg.png);
+        background-image: url(../img/bg/error-bg.png);
         padding: 290px 0 200px;
 
         @media(max-width: $breakpoint1024) {

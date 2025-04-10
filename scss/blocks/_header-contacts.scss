@@ -45,13 +45,13 @@
 
         &--phone {
             &::before {
-                content: url(/assets/img/icons/i-phone.svg);
+                content: url(../img/icons/i-phone.svg);
                 height: 18px;
             }
         }
         &--mail {
             &::before {
-                content: url(/assets/img/icons/i-mail.svg);
+                content: url(../img/icons/i-mail.svg);
                 height: 15px;
             }
         }
