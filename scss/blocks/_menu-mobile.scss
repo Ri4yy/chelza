@@ -6,6 +6,10 @@
     max-height: 270px;
     overflow-y: auto;
 
+    @media(max-width: $breakpoint768) {
+        max-height: 190px;
+    }
+
     &__wrapper {
         padding-left: 15px;
         display: grid;

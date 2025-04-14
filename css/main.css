@@ -1021,6 +1021,11 @@ h3 {
     display: flex;
   }
 }
+@media (max-width: 768px) {
+  .header-mobile {
+    right: -16px;
+  }
+}
 .header-mobile.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -1046,8 +1051,8 @@ h3 {
 }
 @media (max-width: 480px) {
   .header-mobile__wrapper {
-    width: 280px;
-    padding: 50px 24px;
+    width: 290px;
+    padding: 34px 14px;
   }
 }
 .header-mobile__bottom {
@@ -1073,23 +1078,18 @@ h3 {
           align-items: center;
   gap: 7px;
 }
-.header-mobile__schedule-item__name {
+.header-mobile__schedule-name {
   font-weight: 500;
   font-size: 16px;
   color: #323232;
 }
 @media (max-width: 480px) {
-  .header-mobile__schedule-item__name {
-    font-size: 12px;
-  }
-}
-@media (max-width: 375px) {
-  .header-mobile__schedule-item__name {
-    font-size: 11px;
+  .header-mobile__schedule-name {
+    font-size: 14px;
   }
 }
 @media (max-width: 480px) {
-  .header-mobile__schedule-item__icon {
+  .header-mobile__schedule-icon {
     max-height: 16px;
   }
 }
@@ -1151,6 +1151,11 @@ h3 {
   gap: 15px;
   max-height: 270px;
   overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .menu-mobile {
+    max-height: 190px;
+  }
 }
 .menu-mobile__wrapper {
   padding-left: 15px;
