@@ -1,20 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let menu = document.querySelector('.menu'),
+    let menu = document.querySelector('.header-mobile'),
         btnMenu = document.querySelector('.btn-menu'),
         html = document.querySelector('html');
 
     btnMenu.addEventListener('click', (e) => {
-        menu.classList.toggle('menu--open')
+        // menu.classList.toggle('open')
 
         btnMenu.classList.toggle('btn-menu--open')
+        html.classList.toggle('no-scroll')
     })
 
     function resize() {
         let width = window.innerWidth;
 
-        if (width > 768) {
-            menu.classList.remove('menu--open')
+        if (width > 1280) {
+            // menu.classList.remove('open')
             btnMenu.classList.remove('btn-menu--open')
+            html.classList.remove('no-scroll')
         } else {
             return
         }

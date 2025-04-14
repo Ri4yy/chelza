@@ -5,6 +5,10 @@ body {
     font-family: $font-family;
 
     scroll-behavior: smooth;
+
+    @media(max-width: $breakpoint1024) {
+        overflow-x: hidden;
+    }
 }
 
 // Заголовки

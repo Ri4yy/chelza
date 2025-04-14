@@ -18,7 +18,8 @@
         }
     }
     &--mobile {
-        margin-top: 20px;
+        margin-top: 26px;
+        flex-grow: unset;
 
         & .header-search__input {
             color: #fff;
