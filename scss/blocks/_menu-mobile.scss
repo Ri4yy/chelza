@@ -43,11 +43,18 @@
     &__top {
         display: flex;
         align-items: center;
-        gap: 5px;
 
         & svg {
             fill: $black;
+            margin: 0 auto;
         }
+    }
+    &__btn {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 24px;
+        height: 26px;
     }
 
     &__list-lvl2 {

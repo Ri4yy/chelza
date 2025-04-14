@@ -1172,10 +1172,21 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
 }
 .menu-mobile__top svg {
   fill: #323232;
+  margin: 0 auto;
+}
+.menu-mobile__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 26px;
 }
 .menu-mobile__list-lvl2 {
   display: -webkit-box;
