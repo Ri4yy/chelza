@@ -100,6 +100,7 @@
     &--open {
         height: 26px;
         overflow: hidden;
+        z-index: 4;
 
         & span {
             &:first-child {

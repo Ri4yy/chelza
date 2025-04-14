@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         html = document.querySelector('html');
 
     btnMenu.addEventListener('click', (e) => {
-        // menu.classList.toggle('open')
+        menu.classList.toggle('open')
 
         btnMenu.classList.toggle('btn-menu--open')
         html.classList.toggle('no-scroll')
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let width = window.innerWidth;
 
         if (width > 1280) {
-            // menu.classList.remove('open')
+            menu.classList.remove('open')
             btnMenu.classList.remove('btn-menu--open')
             html.classList.remove('no-scroll')
         } else {
@@ -26,6 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
         resize()
     })
     resize()
+
+    let btnMobileMenu = document.querySelectorAll('.menu-mobile__btn');
+
+    btnMobileMenu.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            console.log(e.target)
+            e.target.closest('.menu-mobile__item').classList.toggle('active')
+        })
+    })
 
     // scrollbar
     let propCard = document.querySelectorAll('.catalog-menu__subsection-list'),

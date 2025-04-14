@@ -3,7 +3,11 @@
     flex-direction: column;
     gap: 15px;
 
+    max-height: 270px;
+    overflow-y: auto;
+
     &__wrapper {
+        padding-left: 15px;
         display: grid;
         grid-template-rows: 0fr;
         overflow: hidden;
@@ -15,6 +19,7 @@
         font-size: 20px;
         line-height: 130%;
         color: $black;
+        transition: color .3s;
     }
 
     &__item {
@@ -25,7 +30,6 @@
 
                 &__wrapper {
                     padding-top: 15px;
-                    padding-left: 15px;
                     grid-template-rows: 1fr;
                 }
                 &__link {
@@ -47,6 +51,8 @@
         & svg {
             fill: $black;
             margin: 0 auto;
+            transition: all .3s;
+            pointer-events: none;
         }
     }
     &__btn {
