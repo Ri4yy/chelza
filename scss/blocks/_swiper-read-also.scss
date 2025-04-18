@@ -32,9 +32,20 @@
             font-weight: 600;
             font-size: 16px;
             color: $black;
+            transition: color .3s;
+
+            &:hover {
+                color: $main-color;
+
+                & svg {
+                    fill: $main-color;
+                    transform: translate(2px, -2px);
+                }
+            }
 
             & svg {
                 fill: $black;
+                transition: all .3s;
             }
         }
     }

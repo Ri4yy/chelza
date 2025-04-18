@@ -68,13 +68,15 @@
         font-size: 16px;
         text-align: center;
         transition: all .3s;
+        cursor: pointer;
 
         &--clear {
             border: 1px solid #9a9a98;
             color: #A3A3A1;
 
             &:hover {
-                color: $main-color;
+                color: #d13939;
+                border: 1px solid #d13939;
             }
         }
         &--show {

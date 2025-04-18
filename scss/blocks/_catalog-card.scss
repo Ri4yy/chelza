@@ -10,8 +10,8 @@
     background: #f0f0ef;
 
     &__img {
-        max-height: 180px;
-        height: 100%;
+        height: 180px;
+        flex-shrink: 0;
 
         display: flex;
         justify-content: center;
@@ -35,6 +35,18 @@
         font-size: 20px;
         line-height: 130%;
         color: $black;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+                line-clamp: 2; 
+        -webkit-box-orient: vertical;
+
+        transition: all .3s;
+
+        &:hover {
+            color: $main-color;
+        }
     }
     &__price {
         margin-block-start: auto;
@@ -64,5 +76,10 @@
         line-height: 130%;
         text-align: center;
         color: #9a9a98;
+        transition: all .3s;
+
+        &:hover {
+            color: $main-color;
+        }
     }
 } 

@@ -164,9 +164,20 @@
             font-size: 16px;
             text-align: center;
             color: #9a9a98;
+            transition: color .3s;
+
+            &:hover {
+                color: $main-color;
+
+                & svg {
+                    fill: $main-color;
+                    transform: translateX(-4px);
+                }
+            }
 
             & svg {
                 fill: #9A9A98;
+                transition: all .3s;
             }
         }
     }

@@ -18,7 +18,15 @@
         & .dropdown-menu__container {
     
             top: calc(100% + 3px);
-            right: 0;
+            right: calc(1040px - 465px);
+
+            @media(max-width: $breakpoint1248) {
+                right: calc(975px - 465px);
+            }
+
+            &:has(.catalog-menu-section:hover) {
+                right: 0;
+            }
         }
 
         &:hover {
@@ -81,9 +89,12 @@
 
     &__container {
         opacity: 0;
-        transition: all .3s;
+        transition: transform .3s, opacity .3s;
         transform: translateY(10px);
         pointer-events: none;
         position: absolute;
+
+        box-shadow: 0 0 36px 0 rgba(50, 50, 50, 0.15);
+        border-radius: 30px;
     }
 }

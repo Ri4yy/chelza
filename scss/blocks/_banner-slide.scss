@@ -58,6 +58,8 @@
         }
     }
     &__btn {
+        display: block;
+        width: fit-content;
         margin-top: 42px;
 
         border-radius: 30px;
@@ -160,10 +162,6 @@
         }
 
         &::after {
-            // content: url(/assets/img/banner/circle.svg);
-            // position: absolute;
-            // bottom: -30px;
-            // right: 0;
 
             content: "";
             background-image: url(../assets/img/banner/circle.svg);

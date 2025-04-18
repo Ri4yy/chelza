@@ -29,12 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let btnMobileMenu = document.querySelectorAll('.menu-mobile__btn');
 
-    btnMobileMenu.forEach((btn) => {
-        btn.addEventListener('click', (e) => {
-            console.log(e.target)
-            e.target.closest('.menu-mobile__item').classList.toggle('active')
+    if(btnMobileMenu.length) {
+        btnMobileMenu.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                console.log(e.target)
+                e.target.closest('.menu-mobile__item').classList.toggle('active')
+            })
         })
-    })
+    }
 
     // scrollbar
     let propCard = document.querySelectorAll('.catalog-menu__subsection-list'),
