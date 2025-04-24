@@ -137,6 +137,49 @@ const swiperCertificate = new Swiper('.swiper-certificate', {
     },
 });
 
+const swiperCertificateV2 = new Swiper('.swiper-certificate-v2', {
+    // Optional parameters
+    enabled: true,
+
+    breakpoints: {
+        1: {
+            allowTouchMove: true,
+            slidesPerView: 1,
+        },
+        701: {
+            allowTouchMove: true,
+            spaceBetween: 16,
+            slidesPerView: 2,
+        },
+        769: {
+            allowTouchMove: true,
+            spaceBetween: 16,
+            slidesPerView: 3,
+        },
+        993: {
+            allowTouchMove: true,
+            spaceBetween: 16,
+            slidesPerView: 2,
+        },
+        1100: {
+            allowTouchMove: true,
+            spaceBetween: 16,
+            slidesPerView: 3,
+        },
+        1441: {
+            allowTouchMove: true,
+            spaceBetween: 16,
+            slidesPerView: 4,
+        },
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-certificate-btn-next',
+      prevEl: '.swiper-certificate-btn-prev',
+    },
+});
+
 const swiperReadAlso = new Swiper('.swiper-read-also', {
     // Optional parameters
     spaceBetween: 50,
@@ -332,7 +375,6 @@ let swiperCustomers = new Swiper(".swiper-customers", {
                 "Порядок заключения договоров",
                 "Доставка",
                 "Оплата",
-                "Гарантия",
                 "Сертификаты",
             ];
             return `

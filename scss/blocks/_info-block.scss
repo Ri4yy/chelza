@@ -9,6 +9,35 @@
             font-size: 20px;
         }
     }
+    &__slider {
+        margin-top: 24px;
+        max-width: 894px;
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50px auto 50px;
+        gap: 20px;
+
+        @media(max-width: $breakpoint480) {
+            & .swiper-certificate-btn-prev {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                margin-left: auto;
+            }
+            & .swiper-certificate-btn-next {
+                grid-column: 2/3;
+            }
+        }
+        @media(max-width: 700px) {
+            max-width: 450px;
+            margin: 24px auto;
+        }
+        @media(max-width: $breakpoint480) {
+            max-width: 300px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+    }
     &__inner {
         margin-top: 24px;
 

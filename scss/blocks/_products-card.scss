@@ -16,19 +16,21 @@
     background-size: cover;
 
     @media(max-width: $breakpoint600) {
-        padding: 16px 20px 156px;
+        padding: 16px 20px 220px;
     }
 
     @container card (max-width: 535px) {
-        padding: 16px 20px 156px;
+        padding: 16px 20px 220px;
 
         & .products-card {
 
             &__right {
                 max-width: 170px;
                 position: absolute;
-                bottom: -70px;
-                right: -6px;
+                bottom: 0;
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
             }
             &__left {
                 max-width: 100%;
@@ -90,16 +92,12 @@
         margin-top: auto;
         max-width: 190px;
         position: relative;
-        right: -44px;
-        bottom: -40px;
+        right: -28px;
+        bottom: -10px;
 
-        @media(max-width: $breakpoint768) {
-            bottom: -70px;
-        }
         @media(max-width: $breakpoint600) {
             max-width: 170px;
             position: absolute;
-            right: -6px;
         }
 
         &-img {

@@ -29,7 +29,7 @@
     &__main {
         padding: 48px 66px 66px;
         border: 1px solid rgba(248, 248, 248, 0.58);
-        border-radius: 30px;
+        border-radius: 20px;
         backdrop-filter: blur(12px);
         background: rgba(248, 248, 248, 0.52);
 
@@ -38,6 +38,9 @@
         }
         @media(max-width: $breakpoint600) {
             padding: 25px 22px;
+        }
+        @media(max-width: $breakpoint480) {
+            border-radius: 18px;
         }
     }
     &__top {
@@ -86,7 +89,7 @@
         grid-template-columns: repeat(3, 1fr);
 
         border: 1px solid rgba(248, 248, 248, 0.58);
-        border-radius: 25px;
+        border-radius: 20px;
         backdrop-filter: blur(12px);
         background: rgba(248, 248, 248, 0.52);
 
@@ -101,6 +104,9 @@
             padding: 10px 20px;
             grid-template-columns: unset;
             gap: 6px;
+        }
+        @media(max-width: $breakpoint480) {
+            border-radius: 18px;
         }
 
         &-link {

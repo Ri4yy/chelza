@@ -1,6 +1,12 @@
 .swiper-certificate {
     width: 100%;
 
+    &-v2 {
+        @media(max-width: $breakpoint480) {
+            grid-column: span 2;
+        }
+    }
+
     &__slide {
         display: flex;
     }
